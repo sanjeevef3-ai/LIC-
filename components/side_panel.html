@@ -1,0 +1,228 @@
+<!-- ========================================================================== -->
+<!-- COMPONENT: SIDE PANEL (side_panel.html)                                     -->
+<!-- Clean, Merged, Un-numbered Sidebar Navigation (No numbers: 1., 2., etc.)     -->
+<!-- ========================================================================== -->
+<aside class="sidebar" id="sidebar">
+  <!-- Brand / Header Profile Badge -->
+  <div class="sidebar-header" style="padding:16px 14px; border-bottom:1px solid rgba(255,255,255,0.12); background:linear-gradient(180deg, rgba(0,45,84,0.9) 0%, rgba(0,83,155,0.6) 100%); cursor:pointer;" onclick="switchAppTab('tab-profile')">
+    <div style="display:flex; align-items:center; gap:10px;">
+      <div style="position:relative; width:48px; height:48px; border-radius:50%; overflow:hidden; border:2px solid #FFD100; box-shadow:0 0 12px rgba(255,209,0,0.6); flex-shrink:0; background:#002D54; display:flex; align-items:center; justify-content:center;">
+        <img id="sidebarAgentPhotoImg" src="" alt="Sh. Vindhyachal Singh" style="width:100%; height:100%; object-fit:cover; display:none;">
+        <span id="sidebarAgentAvatar" style="font-size:18px; font-weight:900; color:#FFD100;">VS</span>
+      </div>
+      <div style="overflow:hidden; flex:1;">
+        <div id="sidebarAgentName" style="font-size:13.5px; font-weight:800; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
+          Sh. Vindhyachal Singh
+        </div>
+        <div id="sidebarAgentMobile" style="font-size:11px; color:#FDE68A; font-weight:700;">
+          📞 <span>9406935622</span>
+        </div>
+        <div style="font-size:10px; color:#E2E8F0; margin-top:1px;">
+          Agency: <strong id="sidebarAgentCode" style="color:#FFD100;">0273635D</strong> • Branch: <strong id="sidebarAgentBranch">35D</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION LIST: CLEAN & NATURAL (NO PREFIX NUMBERS) -->
+  <ul class="nav-list" style="padding:10px 8px; margin:0; list-style:none; overflow-y:auto; flex:1;">
+    
+    <!-- 🏠 HOME / 16-TILE HUB -->
+    <li class="nav-item">
+      <a class="nav-link active" data-tab="tab-dashboard" onclick="switchAppTab('tab-dashboard')" style="background:linear-gradient(135deg, rgba(255,209,0,0.18) 0%, rgba(0,83,155,0.2) 100%); border-left:4px solid #FFD100; font-weight:800; cursor:pointer;">
+        <span style="font-size:16px;">🏠</span>
+        <span style="color:#FFD100; font-weight:900;">Dashboard (Home)</span>
+        <span class="badge" style="background:#FFD100; color:#002D54; font-size:10px; font-weight:900; margin-left:auto;">16 APPS</span>
+      </a>
+    </li>
+
+    <!-- AGENCY MASTER -->
+    <li class="nav-item">
+      <a class="nav-link" data-tab="tab-profile" onclick="switchAppTab('tab-profile')">
+        <span style="font-size:15px;">🏢</span>
+        <span>Agency Master (Profile)</span>
+        <span style="font-size:9.5px; color:#94a3b8; margin-left:auto;">35D</span>
+      </a>
+    </li>
+
+    <!-- DATA DOWNLOAD -->
+    <li class="nav-item">
+      <a class="nav-link" onclick="openModal('modalAgencyAutoSync')" style="cursor:pointer;">
+        <span style="font-size:15px;">⬇️</span>
+        <span>Data Download</span>
+        <span class="badge" style="background:#0ea5e9; color:#fff; font-size:9.5px; padding:1px 6px; border-radius:8px; margin-left:auto;">SYNC</span>
+      </a>
+    </li>
+
+    <!-- ALL POLICIES -->
+    <li class="nav-item">
+      <a class="nav-link" data-tab="tab-policies" onclick="switchAppTab('tab-policies')">
+        <span style="font-size:15px;">📋</span>
+        <span>All Policies</span>
+        <span class="badge" style="background:#00539B; color:#fff; font-size:10px; font-weight:800; margin-left:auto;" id="sidePoliciesCount">706</span>
+      </a>
+    </li>
+
+    <!-- SEARCH POLICY -->
+    <li class="nav-item">
+      <a class="nav-link" onclick="openOmniSearch()" style="cursor:pointer;">
+        <span style="font-size:15px;">🔍</span>
+        <span>Search Policy</span>
+        <span class="spotlight-kbd" style="font-size:9px; margin-left:auto;">Ctrl K</span>
+      </a>
+    </li>
+
+    <!-- OTHER POLICY STATUS -->
+    <li class="nav-item">
+      <a class="nav-link" onclick="openOtherPolicyStatusModal()" style="cursor:pointer;">
+        <span style="font-size:15px;">📱</span>
+        <span>Other Policy Status</span>
+        <span style="font-size:9.5px; color:#94a3b8; margin-left:auto;">ASKLIC</span>
+      </a>
+    </li>
+
+    <!-- MDRT & COMMISSION HUB -->
+    <li class="nav-item">
+      <a class="nav-link" data-tab="tab-mdrt" onclick="switchAppTab('tab-mdrt')">
+        <span style="font-size:15px;">📊</span>
+        <span>MDRT & Commission Hub</span>
+        <span class="badge" style="background:#ea580c; color:#fff; font-size:9.5px; padding:1px 6px; border-radius:8px; margin-left:auto;">MDRT</span>
+      </a>
+    </li>
+
+    <!-- SERVICING POLICY -->
+    <li class="nav-item">
+      <a class="nav-link" onclick="openServicingModal()" style="cursor:pointer;">
+        <span style="font-size:15px;">✍️</span>
+        <span>Servicing Policy</span>
+        <span style="font-size:9.5px; color:#94a3b8; margin-left:auto;">Forms</span>
+      </a>
+    </li>
+
+    <!-- NEFT / NACH STATUS -->
+    <li class="nav-item">
+      <a class="nav-link" onclick="openNachModal()" style="cursor:pointer;">
+        <span style="font-size:15px;">🏦</span>
+        <span>NEFT/NACH Status</span>
+        <span class="badge" style="background:#16a34a; color:#fff; font-size:9.5px; padding:1px 6px; border-radius:8px; margin-left:auto;">ACTIVE</span>
+      </a>
+    </li>
+
+    <!-- FAMILY PORTFOLIO -->
+    <li class="nav-item">
+      <a class="nav-link" data-tab="tab-families" onclick="switchAppTab('tab-families')">
+        <span style="font-size:15px;">👨‍👩‍👧‍👦</span>
+        <span>Family Portfolio</span>
+      </a>
+    </li>
+
+    <!-- PLAN PRESENTATION -->
+    <li class="nav-item">
+      <a class="nav-link" onclick="openModal('modalPsBrochureStudio')" style="cursor:pointer;">
+        <span style="font-size:15px;">📑</span>
+        <span>Plan Presentation</span>
+        <span class="badge" style="background:#ca8a04; color:#fff; font-size:9.5px; padding:1px 6px; border-radius:8px; margin-left:auto;">PITCH</span>
+      </a>
+    </li>
+
+    <!-- PREMIUM DUE TRACKER -->
+    <li class="nav-item">
+      <a class="nav-link" data-tab="tab-due" onclick="switchAppTab('tab-due')">
+        <span style="font-size:15px;">📈</span>
+        <span>Premium Due Tracker</span>
+        <span class="badge" style="background:#ef4444; color:#fff; font-size:10px; font-weight:800; margin-left:auto;" id="sideDueCount">DUE</span>
+      </a>
+    </li>
+
+    <!-- ONLINE SERVICE PORTALS -->
+    <li class="nav-item">
+      <a class="nav-link" onclick="openModal('modalLicPortals')" style="cursor:pointer;">
+        <span style="font-size:15px;">🌐</span>
+        <span>Online Service Portals</span>
+      </a>
+    </li>
+
+    <!-- GREETINGS & POSTERS -->
+    <li class="nav-item">
+      <a class="nav-link" onclick="openModal('modalBirthdayGreetings')" style="cursor:pointer;">
+        <span style="font-size:15px;">🎉</span>
+        <span>Greetings & Posters</span>
+      </a>
+    </li>
+
+    <!-- DATA BACKUP -->
+    <li class="nav-item">
+      <a class="nav-link" onclick="exportBackupJson()" style="cursor:pointer;">
+        <span style="font-size:15px;">💾</span>
+        <span>Data Backup (JSON/Excel)</span>
+      </a>
+    </li>
+
+    <!-- TRAINING & SCRIPTS -->
+    <li class="nav-item">
+      <a class="nav-link" onclick="openTrainingVideosModal()" style="cursor:pointer;">
+        <span style="font-size:15px;">🎬</span>
+        <span>Training & Scripts</span>
+      </a>
+    </li>
+
+    <!-- FEEDBACK & HELPLINE -->
+    <li class="nav-item">
+      <a class="nav-link" onclick="openSupportModal()" style="cursor:pointer;">
+        <span style="font-size:15px;">💬</span>
+        <span>Feedback Us / Helpline</span>
+        <span class="badge" style="background:#10b981; color:#fff; font-size:9.5px; padding:1px 6px; border-radius:8px; margin-left:auto;">HELP</span>
+      </a>
+    </li>
+
+    <!-- ADVANCED TOOLS (COLLAPSIBLE / ACCORDION) -->
+    <li class="nav-item has-submenu" id="menuItemAdvancedTools" style="margin-top:10px; border-top:1px dashed rgba(255,255,255,0.15); padding-top:6px;">
+      <a class="nav-link" onclick="toggleSidebarSubmenu('submenuAdvancedTools')" style="cursor:pointer; display:flex; justify-content:space-between; align-items:center; opacity:0.85; font-size:12px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span>🛠️</span>
+          <span>More Tools & AI Copilot</span>
+        </div>
+        <span style="font-size:10px;">▼</span>
+      </a>
+      <ul class="nav-submenu" id="submenuAdvancedTools" style="display:none; list-style:none; padding-left:14px; margin:4px 0 0 0;">
+        <li style="margin-bottom:2px;">
+          <a class="nav-link" data-tab="tab-plans" onclick="switchAppTab('tab-plans')" style="font-size:12px; padding:5px 8px;">
+            <span>🧮</span>
+            <span>All LIC Plans Calculator</span>
+          </a>
+        </li>
+        <li style="margin-bottom:2px;">
+          <a class="nav-link" data-tab="tab-customers" onclick="switchAppTab('tab-customers')" style="font-size:12px; padding:5px 8px;">
+            <span>👥</span>
+            <span>Policyholders (Clients)</span>
+          </a>
+        </li>
+        <li style="margin-bottom:2px;">
+          <a class="nav-link" data-tab="tab-maturity" onclick="switchAppTab('tab-maturity')" style="font-size:12px; padding:5px 8px;">
+            <span>💰</span>
+            <span>Maturity & SB Claims</span>
+          </a>
+        </li>
+        <li style="margin-bottom:2px;">
+          <a class="nav-link" data-tab="tab-payments" onclick="switchAppTab('tab-payments')" style="font-size:12px; padding:5px 8px;">
+            <span>📄</span>
+            <span>Payment Receipts Tracker</span>
+          </a>
+        </li>
+        <li style="margin-bottom:2px;">
+          <a class="nav-link" data-tab="tab-ai-copilot" onclick="switchAppTab('tab-ai-copilot')" style="font-size:12px; padding:5px 8px;">
+            <span>🤖</span>
+            <span>AI Copilot & HLV Desk</span>
+          </a>
+        </li>
+        <li style="margin-bottom:2px;">
+          <a class="nav-link" data-tab="tab-v12-genesis" onclick="switchAppTab('tab-v12-genesis')" style="font-size:12px; padding:5px 8px;">
+            <span>📡</span>
+            <span>Agency Radar Field Desk</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</aside>

@@ -1,0 +1,6 @@
+{
+  "version": "14.0",
+  "codename": "Apex Quantum (NVIDIA GPU Matrix Edition)",
+  "buildTime": 1793125895,
+  "releaseNotes": "v14.0 Apex Quantum: Background Hardware-Accelerated Monte-Carlo Matrix Engine with NVIDIA GT 730 (4GB), 16-Tile Unified App Hub, Universal Back Navigation, and Merged Sidebar Navigation."
+}

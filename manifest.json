@@ -1,0 +1,24 @@
+{
+  "name": "LIC Agent Pro - एजेंसी 0273635D (विंध्याचल सिंह)",
+  "short_name": "LIC Agent 35D",
+  "description": "भारतीय जीवन बीमा निगम अधिकृत एजेंसी 0273635D - भोपाल शाखा 35D - संपूर्ण पॉलिसी एवं क्लाइंट 360° मोबाइल ऐप",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#00539B",
+  "theme_color": "#00539B",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/data/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/data/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

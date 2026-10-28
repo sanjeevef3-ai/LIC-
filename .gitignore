@@ -1,0 +1,9 @@
+# Dependencies and build outputs
+node_modules/
+.vercel
+*.log
+.system_generated/
+*.tmp
+cloudflared.exe
+*.pdb
+backups/

@@ -1,0 +1,423 @@
+<!-- LIC LEADER APP 16-TILE GRID & QUICK ACTION BAR (PIXEL-PERFECT AS PER MOBILE SCREENSHOT) -->
+<div class="leader-app-container" style="background:#f1f5f9; border-radius:16px; padding:10px 6px; margin-bottom:24px; box-shadow:0 4px 20px rgba(0,0,0,0.06); border:1px solid #e2e8f0;">
+  
+  <!-- 1. TOP HEADER QUICK ACTION BAR -->
+  <div class="leader-top-bar" style="background:#ffffff; border-radius:14px; padding:12px 16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); margin-bottom:16px; border:1px solid #e2e8f0;">
+    <!-- Left: Agent Initials & Name -->
+    <div style="display:flex; align-items:center; gap:12px; cursor:pointer;" onclick="switchAppTab('tab-profile')">
+      <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg, #00539b 0%, #002d54 100%); color:#ffd100; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:900; border:2px solid #ffd100; box-shadow:0 2px 8px rgba(0,83,155,0.3);">
+        VS
+      </div>
+      <div>
+        <div style="font-size:14px; font-weight:800; color:#0f172a; line-height:1.2;">Hello, Vindhyachal Singh</div>
+        <div style="font-size:11.5px; color:#64748b; font-weight:600;">Agency: <span style="color:#00539b; font-weight:800;">0273635D</span> • Branch 35D Bhopal</div>
+      </div>
+    </div>
+
+    <!-- Right: 3 Quick Action Pills (Support, Today's Reminder, Notification) -->
+    <div style="display:flex; align-items:center; gap:8px;">
+      <button type="button" class="leader-quick-btn" onclick="openSupportModal()" title="Support Helpline" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:10px; padding:6px 12px; display:flex; align-items:center; gap:6px; cursor:pointer; font-weight:700; font-size:12px; color:#334155; transition:all 0.2s ease;">
+        <span style="font-size:16px;">🎧</span>
+        <span>Support</span>
+      </button>
+
+      <button type="button" class="leader-quick-btn" onclick="openReminderModal()" title="Today's Reminders" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:10px; padding:6px 12px; display:flex; align-items:center; gap:6px; cursor:pointer; font-weight:700; font-size:12px; color:#334155; position:relative; transition:all 0.2s ease;">
+        <span style="font-size:16px;">📅</span>
+        <span>Today's Reminder</span>
+        <span style="background:#ef4444; color:#fff; font-size:10px; font-weight:800; padding:1px 5px; border-radius:10px; margin-left:2px;">7</span>
+      </button>
+
+      <button type="button" class="leader-quick-btn" onclick="openNotificationModal()" title="Notifications" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:10px; padding:6px 12px; display:flex; align-items:center; gap:6px; cursor:pointer; font-weight:700; font-size:12px; color:#334155; position:relative; transition:all 0.2s ease;">
+        <span style="font-size:16px;">🔔</span>
+        <span>Notification</span>
+        <span style="position:absolute; top:-3px; right:-3px; width:9px; height:9px; background:#ef4444; border-radius:50%; border:2px solid #fff;"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 2. 16 COLOR-CODED 3D CARDS GRID -->
+  <div class="leader-16-grid" style="display:grid; grid-template-columns:repeat(8, 1fr); gap:14px;">
+    
+    <!-- 1. Agency Master -->
+    <div class="leader-tile-card tile-blue" onclick="switchAppTab('tab-profile')" style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#dbeafe; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">🏢</div>
+        <div style="font-weight:800; color:#1e3a8a; font-size:14px;">Agency Master</div>
+        <div style="font-size:11px; color:#60a5fa; font-weight:600; margin-top:2px;">Profile & MDRT 35D</div>
+      </div>
+    </div>
+
+    <!-- 2. Data Download -->
+    <div class="leader-tile-card tile-peach" onclick="openModal('modalAgencyAutoSync')" style="background:#fff7ed; border:1px solid #fed7aa; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#ffedd5; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">⬇️</div>
+        <div style="font-weight:800; color:#9a3412; font-size:14px;">Data Download</div>
+        <div style="font-size:11px; color:#fb923c; font-weight:600; margin-top:2px;">Sync Portal Records</div>
+      </div>
+    </div>
+
+    <!-- 3. Show Data -->
+    <div class="leader-tile-card tile-green" onclick="switchAppTab('tab-policies')" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#dcfce7; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">📋</div>
+        <div style="font-weight:800; color:#14532d; font-size:14px;">Show Data</div>
+        <div style="font-size:11px; color:#4ade80; font-weight:600; margin-top:2px;">All 706 Policies List</div>
+      </div>
+    </div>
+
+    <!-- 4. Search Policy -->
+    <div class="leader-tile-card tile-yellow" onclick="openOmniSearch()" style="background:#fefce8; border:1px solid #fef08a; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#fef9c3; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">🔍</div>
+        <div style="font-weight:800; color:#713f12; font-size:14px;">Search Policy</div>
+        <div style="font-size:11px; color:#eab308; font-weight:600; margin-top:2px;">Instant Omni Finder</div>
+      </div>
+    </div>
+
+    <!-- 5. Other Policy Status -->
+    <div class="leader-tile-card tile-blue" onclick="openOtherPolicyStatusModal()" style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#dbeafe; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">📱</div>
+        <div style="font-weight:800; color:#1e3a8a; font-size:14px;">Other Policy Status</div>
+        <div style="font-size:11px; color:#60a5fa; font-weight:600; margin-top:2px;">ASKLIC SMS / External</div>
+      </div>
+    </div>
+
+    <!-- 6. Personal Reports -->
+    <div class="leader-tile-card tile-peach" onclick="switchAppTab('tab-mdrt')" style="background:#fff7ed; border:1px solid #fed7aa; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#ffedd5; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">📊</div>
+        <div style="font-weight:800; color:#9a3412; font-size:14px;">Personal Reports</div>
+        <div style="font-size:11px; color:#fb923c; font-weight:600; margin-top:2px;">Commission & MDRT</div>
+      </div>
+    </div>
+
+    <!-- 7. Servicing Policy -->
+    <div class="leader-tile-card tile-green" onclick="openServicingModal()" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#dcfce7; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">✍️</div>
+        <div style="font-weight:800; color:#14532d; font-size:14px;">Servicing Policy</div>
+        <div style="font-size:11px; color:#4ade80; font-weight:600; margin-top:2px;">Bank/Nominee Forms</div>
+      </div>
+    </div>
+
+    <!-- 8. NEFT/NACH Status -->
+    <div class="leader-tile-card tile-yellow" onclick="openNachModal()" style="background:#fefce8; border:1px solid #fef08a; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#fef9c3; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">🏦</div>
+        <div style="font-weight:800; color:#713f12; font-size:14px;">NEFT/NACH Status</div>
+        <div style="font-size:11px; color:#eab308; font-weight:600; margin-top:2px;">Bank Mandate Tracker</div>
+      </div>
+    </div>
+
+    <!-- 9. Family Report -->
+    <div class="leader-tile-card tile-blue" onclick="switchAppTab('tab-families')" style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#dbeafe; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">👨‍👩‍👧‍👦</div>
+        <div style="font-weight:800; color:#1e3a8a; font-size:14px;">Family Report</div>
+        <div style="font-size:11px; color:#60a5fa; font-weight:600; margin-top:2px;">Household Cashflows</div>
+      </div>
+    </div>
+
+    <!-- 10. Plan Presentation -->
+    <div class="leader-tile-card tile-peach" onclick="openModal('modalPsBrochureStudio')" style="background:#fff7ed; border:1px solid #fed7aa; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#ffedd5; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">📑</div>
+        <div style="font-weight:800; color:#9a3412; font-size:14px;">Plan Presentation</div>
+        <div style="font-size:11px; color:#fb923c; font-weight:600; margin-top:2px;">Brochure & Combos</div>
+      </div>
+    </div>
+
+    <!-- 11. Business Report -->
+    <div class="leader-tile-card tile-green" onclick="switchAppTab('tab-dashboard')" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#dcfce7; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">📈</div>
+        <div style="font-weight:800; color:#14532d; font-size:14px;">Business Report</div>
+        <div style="font-size:11px; color:#4ade80; font-weight:600; margin-top:2px;">Collection & FY Trends</div>
+      </div>
+    </div>
+
+    <!-- 12. Online Service -->
+    <div class="leader-tile-card tile-yellow" onclick="openModal('modalLicPortals')" style="background:#fefce8; border:1px solid #fef08a; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#fef9c3; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">🌐</div>
+        <div style="font-weight:800; color:#713f12; font-size:14px;">Online Service</div>
+        <div style="font-size:11px; color:#eab308; font-weight:600; margin-top:2px;">Merchant & Portals</div>
+      </div>
+    </div>
+
+    <!-- 13. Greetings & Videos -->
+    <div class="leader-tile-card tile-blue" onclick="openModal('modalBirthdayGreetings')" style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#dbeafe; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">🎉</div>
+        <div style="font-weight:800; color:#1e3a8a; font-size:14px;">Greetings & Videos</div>
+        <div style="font-size:11px; color:#60a5fa; font-weight:600; margin-top:2px;">Birthdays & Posters</div>
+      </div>
+    </div>
+
+    <!-- 14. Data Backup -->
+    <div class="leader-tile-card tile-peach" onclick="exportBackupJson()" style="background:#fff7ed; border:1px solid #fed7aa; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#ffedd5; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">💾</div>
+        <div style="font-weight:800; color:#9a3412; font-size:14px;">Data Backup</div>
+        <div style="font-size:11px; color:#fb923c; font-weight:600; margin-top:2px;">Export 706 Records</div>
+      </div>
+    </div>
+
+    <!-- 15. Training Videos -->
+    <div class="leader-tile-card tile-green" onclick="openTrainingVideosModal()" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#dcfce7; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">🎬</div>
+        <div style="font-weight:800; color:#14532d; font-size:14px;">Training Videos</div>
+        <div style="font-size:11px; color:#4ade80; font-weight:600; margin-top:2px;">Selling Scripts & Tips</div>
+      </div>
+    </div>
+
+    <!-- 16. Feedback Us -->
+    <div class="leader-tile-card tile-yellow" onclick="openSupportModal()" style="background:#fefce8; border:1px solid #fef08a; border-radius:14px; padding:10px 6px; position:relative; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.03); transition:transform 0.2s, box-shadow 0.2s;">
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:6px;">
+        <div style="width:48px; height:48px; border-radius:12px; background:#fef9c3; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:8px;">💬</div>
+        <div style="font-weight:800; color:#713f12; font-size:14px;">Feedback Us</div>
+        <div style="font-size:11px; color:#eab308; font-weight:600; margin-top:2px;">Helpline & Branch</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ========================================== -->
+<!-- MODALS FOR LEADER HUB COMPONENT -->
+<!-- ========================================== -->
+
+<!-- Modal: Support & Feedback -->
+<div id="modalLeaderSupport" class="modal" style="display:none; position:fixed; inset:0; z-index:99999; background:rgba(15,23,42,0.7); backdrop-filter:blur(4px); align-items:center; justify-content:center; padding:10px 6px;">
+  <div style="background:#fff; border-radius:16px; width:100%; max-width:520px; box-shadow:0 20px 40px rgba(0,0,0,0.3); overflow:hidden; border-top:5px solid #00539b;">
+    <div style="background:linear-gradient(135deg, #00539b 0%, #002d54 100%); color:#fff; padding:16px 20px; display:flex; justify-content:space-between; align-items:center;">
+      <h3 style="margin:0; font-size:16px; font-weight:800; display:flex; align-items:center; gap:8px;">
+        <span>🎧</span> अभिकर्ता सहायता एवं फीडबैक (Agent Support)
+      </h3>
+      <button type="button" onclick="document.getElementById('modalLeaderSupport').style.display='none'" style="background:none; border:none; color:#fff; font-size:20px; cursor:pointer;">✕</button>
+    </div>
+    <div style="padding:20px;">
+      <div style="text-align:center; margin-bottom:16px;">
+        <div style="font-size:36px; margin-bottom:6px;">👨‍💼</div>
+        <h4 style="margin:0; font-size:16px; color:#0f172a;">श्री विंध्याचल सिंह (मुख्य अभिकर्ता)</h4>
+        <div style="font-size:12px; color:#64748b;">एजेंसी कोड: <strong>0273635D</strong> • शाखा 35D, भोपाल</div>
+      </div>
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:14px; margin-bottom:16px;">
+        <div style="font-size:12.5px; color:#334155; margin-bottom:8px;"><strong>📞 फ़ोन कॉल:</strong> <a href="tel:9406935622" style="color:#00539b; font-weight:700;">+91 9406935622</a></div>
+        <div style="font-size:12.5px; color:#334155; margin-bottom:8px;"><strong>✉️ ईमेल:</strong> <a href="mailto:vindhyachal02@gmail.com" style="color:#00539b; font-weight:700;">vindhyachal02@gmail.com</a></div>
+        <div style="font-size:12.5px; color:#334155;"><strong>🏢 शाखा कार्यालय:</strong> LIC मंडल कार्यालय शाखा 35D, भोपाल मंडल</div>
+      </div>
+      <div style="display:flex; gap:10px;">
+        <a href="https://wa.me/919406935622?text=नमस्ते%20विंध्याचल%20जी,%20LIC%20पोर्टल%20सहायता%20हेतु%20संदेश।" target="_blank" class="btn btn-gold" style="flex:1; text-align:center; padding:10px; text-decoration:none; font-weight:800;">
+          💬 WhatsApp सहायता
+        </a>
+        <button type="button" class="btn btn-secondary" onclick="document.getElementById('modalLeaderSupport').style.display='none'" style="flex:1; padding:10px;">
+          बंद करें
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Today's Reminders -->
+<div id="modalLeaderReminder" class="modal" style="display:none; position:fixed; inset:0; z-index:99999; background:rgba(15,23,42,0.7); backdrop-filter:blur(4px); align-items:center; justify-content:center; padding:10px 6px;">
+  <div style="background:#fff; border-radius:16px; width:100%; max-width:640px; max-height:85vh; display:flex; flex-direction:column; box-shadow:0 20px 40px rgba(0,0,0,0.3); overflow:hidden; border-top:5px solid #f59e0b;">
+    <div style="background:linear-gradient(135deg, #d97706 0%, #b45309 100%); color:#fff; padding:16px 20px; display:flex; justify-content:space-between; align-items:center;">
+      <h3 style="margin:0; font-size:16px; font-weight:800; display:flex; align-items:center; gap:8px;">
+        <span>📅</span> आज के महत्वपूर्ण रिमाइंडर्स (Due & FUP Tracker)
+      </h3>
+      <button type="button" onclick="document.getElementById('modalLeaderReminder').style.display='none'" style="background:none; border:none; color:#fff; font-size:20px; cursor:pointer;">✕</button>
+    </div>
+    <div id="leaderRemindersList" style="padding:10px 6px; overflow-y:auto; flex:1;">
+      <!-- Dynamic list -->
+    </div>
+    <div style="padding:12px 16px; background:#f8fafc; border-top:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center;">
+      <button type="button" class="btn btn-gold" onclick="document.getElementById('modalLeaderReminder').style.display='none'; switchAppTab('tab-due')" style="font-size:12px; font-weight:800;">
+        📊 सभी ड्यू पॉलिसियां देखें
+      </button>
+      <button type="button" class="btn btn-secondary" onclick="document.getElementById('modalLeaderReminder').style.display='none'" style="font-size:12px;">
+        बंद करें
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Notifications -->
+<div id="modalLeaderNotifications" class="modal" style="display:none; position:fixed; inset:0; z-index:99999; background:rgba(15,23,42,0.7); backdrop-filter:blur(4px); align-items:center; justify-content:center; padding:10px 6px;">
+  <div style="background:#fff; border-radius:16px; width:100%; max-width:550px; box-shadow:0 20px 40px rgba(0,0,0,0.3); overflow:hidden; border-top:5px solid #10b981;">
+    <div style="background:linear-gradient(135deg, #059669 0%, #047857 100%); color:#fff; padding:16px 20px; display:flex; justify-content:space-between; align-items:center;">
+      <h3 style="margin:0; font-size:16px; font-weight:800; display:flex; align-items:center; gap:8px;">
+        <span>🔔</span> एजेंसी अपडेट एवं सूचनाएं (Notifications)
+      </h3>
+      <button type="button" onclick="document.getElementById('modalLeaderNotifications').style.display='none'" style="background:none; border:none; color:#fff; font-size:20px; cursor:pointer;">✕</button>
+    </div>
+    <div id="leaderNotificationsList" style="padding:10px 6px; max-height:60vh; overflow-y:auto;">
+      <!-- Dynamic notifications -->
+    </div>
+    <div style="padding:12px 16px; background:#f8fafc; border-top:1px solid #e2e8f0; text-align:right;">
+      <button type="button" class="btn btn-secondary" onclick="document.getElementById('modalLeaderNotifications').style.display='none'" style="font-size:12px;">
+        बंद करें
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: NEFT / NACH Status Tracker -->
+<div id="modalNachStatus" class="modal" style="display:none; position:fixed; inset:0; z-index:99999; background:rgba(15,23,42,0.7); backdrop-filter:blur(4px); align-items:center; justify-content:center; padding:10px 6px;">
+  <div style="background:#fff; border-radius:16px; width:100%; max-width:850px; max-height:85vh; display:flex; flex-direction:column; box-shadow:0 20px 40px rgba(0,0,0,0.3); overflow:hidden; border-top:5px solid #ca8a04;">
+    <div style="background:linear-gradient(135deg, #00539b 0%, #002d54 100%); color:#fff; padding:16px 20px; display:flex; justify-content:space-between; align-items:center;">
+      <h3 style="margin:0; font-size:16px; font-weight:800; display:flex; align-items:center; gap:8px;">
+        <span>🏦</span> बैंक NACH एवं ECS मैंडेट स्टेटस ट्रैकर
+      </h3>
+      <button type="button" onclick="document.getElementById('modalNachStatus').style.display='none'" style="background:none; border:none; color:#fff; font-size:20px; cursor:pointer;">✕</button>
+    </div>
+    <div style="padding:16px 20px; background:#f8fafc; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+      <div>
+        <span style="font-size:12px; font-weight:700; color:#334155;">मासिक ऑटो-डेबिट एवं बैंक मैंडेट पंजीकृत पॉलिसियां</span>
+      </div>
+      <span class="badge" style="background:#10b981; color:#fff; font-weight:800; padding:4px 10px; border-radius:8px;">100% बैंक सत्यापित</span>
+    </div>
+    <div style="padding:10px 6px; overflow-y:auto; flex:1;">
+      <table style="width:100%; border-collapse:collapse; font-size:12.5px;">
+        <thead>
+          <tr style="background:#f1f5f9; color:#475569; text-align:left;">
+            <th style="padding:10px;">#</th>
+            <th style="padding:10px;">पॉलिसी नं.</th>
+            <th style="padding:10px;">पॉलिसीधारक</th>
+            <th style="padding:10px;">प्लान</th>
+            <th style="padding:10px;">मोड</th>
+            <th style="padding:10px;">प्रीमियम</th>
+            <th style="padding:10px;">NACH स्थिति</th>
+            <th style="padding:10px;">कार्यवाही</th>
+          </tr>
+        </thead>
+        <tbody id="nachStatusTableBody">
+          <!-- Populated by JS -->
+        </tbody>
+      </table>
+    </div>
+    <div style="padding:12px 16px; background:#f8fafc; border-top:1px solid #e2e8f0; text-align:right;">
+      <button type="button" class="btn btn-secondary" onclick="document.getElementById('modalNachStatus').style.display='none'" style="font-size:12px;">
+        बंद करें
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Servicing Policy Forms & Services -->
+<div id="modalServicingPolicy" class="modal" style="display:none; position:fixed; inset:0; z-index:99999; background:rgba(15,23,42,0.7); backdrop-filter:blur(4px); align-items:center; justify-content:center; padding:10px 6px;">
+  <div style="background:#fff; border-radius:16px; width:100%; max-width:680px; box-shadow:0 20px 40px rgba(0,0,0,0.3); overflow:hidden; border-top:5px solid #10b981;">
+    <div style="background:linear-gradient(135deg, #059669 0%, #047857 100%); color:#fff; padding:16px 20px; display:flex; justify-content:space-between; align-items:center;">
+      <h3 style="margin:0; font-size:16px; font-weight:800; display:flex; align-items:center; gap:8px;">
+        <span>✍️</span> पॉलिसी सर्विसिंग फॉर्म्स व सहायता (Policy Servicing Forms)
+      </h3>
+      <button type="button" onclick="document.getElementById('modalServicingPolicy').style.display='none'" style="background:none; border:none; color:#fff; font-size:20px; cursor:pointer;">✕</button>
+    </div>
+    <div style="padding:20px; display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px;">
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:14px;">
+        <h4 style="margin:0 0 6px 0; font-size:14px; color:#0f172a;">🏦 NEFT / बैंक खाता मैंडेट फॉर्म</h4>
+        <p style="margin:0 0 10px 0; font-size:11.5px; color:#64748b;">दावा/SB/परिपक्वता सीधे खाते में पाने हेतु NEFT फॉर्म डाउनलोड करें।</p>
+        <a href="https://licindia.in/documents/20121/116973/neft_mandate_form.pdf" target="_blank" class="btn btn-sm btn-gold" style="font-size:11px; text-decoration:none;">📄 NEFT फॉर्म डाउनलोड</a>
+      </div>
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:14px;">
+        <h4 style="margin:0 0 6px 0; font-size:14px; color:#0f172a;">👥 नॉमिनी बदलाव (Nomination Change)</h4>
+        <p style="margin:0 0 10px 0; font-size:11.5px; color:#64748b;">पॉलिसी में नॉमिनी का नाम अथवा संबंध बदलने का फॉर्म नं. 3750।</p>
+        <a href="https://licindia.in" target="_blank" class="btn btn-sm btn-gold" style="font-size:11px; text-decoration:none;">📄 फॉर्म 3750 देखें</a>
+      </div>
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:14px;">
+        <h4 style="margin:0 0 6px 0; font-size:14px; color:#0f172a;">🏡 पता / मोबाइल नंबर बदलाव</h4>
+        <p style="margin:0 0 10px 0; font-size:11.5px; color:#64748b;">ग्राहक का वर्तमान पता व फोन नंबर LIC रिकॉर्ड में अपडेट कराने का प्रारूप।</p>
+        <button class="btn btn-sm btn-gold" onclick="alert('शाखा 35D में आधार कार्ड प्रति के साथ आवेदन प्रस्तुत करें।')" style="font-size:11px;">📋 निर्देश देखें</button>
+      </div>
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:14px;">
+        <h4 style="margin:0 0 6px 0; font-size:14px; color:#0f172a;">🔄 पॉलिसी रिवाइवल फॉर्म (DGH)</h4>
+        <p style="margin:0 0 10px 0; font-size:11.5px; color:#64748b;">बंद पॉलिसी को पुनः चालू करने हेतु स्वस्थता घोषणा पत्र (फॉर्म 680/700)।</p>
+        <button class="btn btn-sm btn-gold" onclick="document.getElementById('modalServicingPolicy').style.display='none'; switchAppTab('tab-due')" style="font-size:11px;">⚡ रिवाइवल कैलकुलेटर</button>
+      </div>
+    </div>
+    <div style="padding:12px 16px; background:#f8fafc; border-top:1px solid #e2e8f0; text-align:right;">
+      <button type="button" class="btn btn-secondary" onclick="document.getElementById('modalServicingPolicy').style.display='none'" style="font-size:12px;">
+        बंद करें
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Other Policy Status / ASKLIC -->
+<div id="modalOtherPolicyStatus" class="modal" style="display:none; position:fixed; inset:0; z-index:99999; background:rgba(15,23,42,0.7); backdrop-filter:blur(4px); align-items:center; justify-content:center; padding:10px 6px;">
+  <div style="background:#fff; border-radius:16px; width:100%; max-width:540px; box-shadow:0 20px 40px rgba(0,0,0,0.3); overflow:hidden; border-top:5px solid #2563eb;">
+    <div style="background:linear-gradient(135deg, #1e3a8a 0%, #00539b 100%); color:#fff; padding:16px 20px; display:flex; justify-content:space-between; align-items:center;">
+      <h3 style="margin:0; font-size:16px; font-weight:800; display:flex; align-items:center; gap:8px;">
+        <span>📱</span> अन्य पॉलिसी स्थिति (ASKLIC SMS & WhatsApp Status)
+      </h3>
+      <button type="button" onclick="document.getElementById('modalOtherPolicyStatus').style.display='none'" style="background:none; border:none; color:#fff; font-size:20px; cursor:pointer;">✕</button>
+    </div>
+    <div style="padding:20px;">
+      <div style="background:#f0f9ff; border:1px solid #bae6fd; border-radius:10px; padding:14px; margin-bottom:14px;">
+        <h4 style="margin:0 0 6px 0; color:#0369a1; font-size:13.5px;">1. ASKLIC SMS सर्विस (बिना इंटरनेट)</h4>
+        <p style="margin:0; font-size:12px; color:#334155;">
+          अपने मोबाइल से <strong>ASKLIC &lt;पॉलिसी नं&gt; PREMIUM</strong> लिखकर <strong>9222492224</strong> या <strong>56767877</strong> पर SMS भेजें।
+        </p>
+      </div>
+      <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:10px; padding:14px; margin-bottom:14px;">
+        <h4 style="margin:0 0 6px 0; color:#15803d; font-size:13.5px;">2. LIC आधिकारिक WhatsApp बॉट</h4>
+        <p style="margin:0; font-size:12px; color:#334155;">
+          LIC के आधिकारिक WhatsApp नंबर <strong>8976862090</strong> पर <strong>Hi</strong> भेजें और तुरंत स्टेटस जानें।
+        </p>
+      </div>
+      <div style="display:flex; gap:10px;">
+        <a href="https://wa.me/918976862090?text=Hi" target="_blank" class="btn btn-gold" style="flex:1; text-align:center; padding:10px; text-decoration:none; font-weight:800;">
+          📲 LIC WhatsApp बॉट खोलें
+        </a>
+        <button type="button" class="btn btn-secondary" onclick="document.getElementById('modalOtherPolicyStatus').style.display='none'" style="flex:1; padding:10px;">
+          बंद करें
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Training Videos -->
+<div id="modalTrainingVideos" class="modal" style="display:none; position:fixed; inset:0; z-index:99999; background:rgba(15,23,42,0.7); backdrop-filter:blur(4px); align-items:center; justify-content:center; padding:10px 6px;">
+  <div style="background:#fff; border-radius:16px; width:100%; max-width:680px; box-shadow:0 20px 40px rgba(0,0,0,0.3); overflow:hidden; border-top:5px solid #16a34a;">
+    <div style="background:linear-gradient(135deg, #15803d 0%, #166534 100%); color:#fff; padding:16px 20px; display:flex; justify-content:space-between; align-items:center;">
+      <h3 style="margin:0; font-size:16px; font-weight:800; display:flex; align-items:center; gap:8px;">
+        <span>🎬</span> LIC अभिकर्ता ट्रेनिंग वीडियो एवं सेलिंग टिप्स (Training Videos)
+      </h3>
+      <button type="button" onclick="document.getElementById('modalTrainingVideos').style.display='none'" style="background:none; border:none; color:#fff; font-size:20px; cursor:pointer;">✕</button>
+    </div>
+    <div style="padding:20px; display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px;">
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:14px;">
+        <div style="font-size:26px; margin-bottom:6px;">🎯</div>
+        <h4 style="margin:0 0 4px 0; font-size:13.5px; color:#0f172a;">MDRT क्वालीफिकेशन मास्टरक्लास</h4>
+        <p style="margin:0 0 10px 0; font-size:11.5px; color:#64748b;">40 Lives और ₹10 लाख प्रीमियम लक्ष्य कैसे 6 महीने में पूरा करें।</p>
+        <button class="btn btn-sm btn-gold" onclick="alert('MDRT रोडमैप मॉड्यूल MDRT टैब में उपलब्ध है।')" style="font-size:11px;">▶️ गाइड देखें</button>
+      </div>
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:14px;">
+        <div style="font-size:26px; margin-bottom:6px;">👰</div>
+        <h4 style="margin:0 0 4px 0; font-size:13.5px; color:#0f172a;">कन्यादान एवं उमंग कॉम्बो पिच</h4>
+        <p style="margin:0 0 10px 0; font-size:11.5px; color:#64748b;">बेटी की शिक्षा व विवाह हेतु जीवन लाभ व उमंग का संयोजन प्लान।</p>
+        <button class="btn btn-sm btn-gold" onclick="document.getElementById('modalTrainingVideos').style.display='none'; openModal('modalPsBrochureStudio')" style="font-size:11px;">📑 ब्रोशर स्टूडियो खोलें</button>
+      </div>
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:14px;">
+        <div style="font-size:26px; margin-bottom:6px;">👴</div>
+        <h4 style="margin:0 0 4px 0; font-size:13.5px; color:#0f172a;">रिटायरमेंट गारंटी (जीवन उत्सव & शांति)</h4>
+        <p style="margin:0 0 10px 0; font-size:11.5px; color:#64748b;">जीवन भर 10% गारंटीड रिटर्न देने वाले उत्पादों की प्रेजेंटेशन।</p>
+        <button class="btn btn-sm btn-gold" onclick="document.getElementById('modalTrainingVideos').style.display='none'; switchAppTab('tab-plans')" style="font-size:11px;">📑 प्लान कैलकुलेटर</button>
+      </div>
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:14px;">
+        <div style="font-size:26px; margin-bottom:6px;">📞</div>
+        <h4 style="margin:0 0 4px 0; font-size:13.5px; color:#0f172a;">ऑब्जेक्शन हैंडलिंग (आपत्ति निवारण)</h4>
+        <p style="margin:0 0 10px 0; font-size:11.5px; color:#64748b;">"अभी पैसे नहीं हैं" और "बाद में देखेंगे" पर सफल एजेंट जवाब।</p>
+        <button class="btn btn-sm btn-gold" onclick="document.getElementById('modalTrainingVideos').style.display='none'; switchAppTab('tab-ai-copilot')" style="font-size:11px;">🤖 AI को-पायलट गाइड</button>
+      </div>
+    </div>
+    <div style="padding:12px 16px; background:#f8fafc; border-top:1px solid #e2e8f0; text-align:right;">
+      <button type="button" class="btn btn-secondary" onclick="document.getElementById('modalTrainingVideos').style.display='none'" style="font-size:12px;">
+        बंद करें
+      </button>
+    </div>
+  </div>
+</div>

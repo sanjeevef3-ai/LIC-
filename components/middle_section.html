@@ -1,0 +1,208 @@
+<!-- ========================================================================== -->
+<!-- COMPONENT: MIDDLE SECTION (middle_section.html)                             -->
+<!-- English standard layout for operations & performance hub                    -->
+<!-- ========================================================================== -->
+<section id="component-middle-section" style="margin-top:24px; margin-bottom:24px;">
+
+  <!-- SECTION TITLE -->
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+    <div>
+      <h3 style="font-size:16px; font-weight:800; color:var(--text-primary); margin:0; display:flex; align-items:center; gap:8px;">
+        <span>🎯</span>
+        <span>Agency Operations, Due Tracker & Performance Hub</span>
+      </h3>
+      <p style="font-size:11.5px; color:var(--text-muted); margin:2px 0 0 0;">
+        7 Days / 30 Days Due, Lapsed Revival, MDRT Tracker & Income Analytics
+      </p>
+    </div>
+    <span class="badge" style="background:rgba(16,185,129,0.15); color:#059669; font-weight:700; padding:4px 10px; border-radius:12px; font-size:11px;">
+      ● Live Data Feed Active
+    </span>
+  </div>
+
+  <!-- 3 SEPARATE CARDS WITH BUTTONS, DATA AND MINI-CHARTS -->
+  <div style="display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap:16px; margin-bottom:24px;" class="middle-3-cards-grid">
+
+    <!-- CARD 1: DUE 07 DAYS -->
+    <div class="card" style="margin-bottom:0; border-radius:12px; border-top:4px solid #EF4444; box-shadow:0 4px 14px rgba(0,0,0,0.05); min-width:0;">
+      <div style="padding:14px 16px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color);">
+        <div>
+          <span style="font-size:11px; font-weight:800; text-transform:uppercase; color:#EF4444; letter-spacing:0.5px;">Urgent Due</span>
+          <h4 style="font-size:15px; font-weight:800; margin:2px 0 0 0; color:var(--text-primary);">Due 07 Days</h4>
+        </div>
+        <button type="button" class="btn btn-outline btn-sm" onclick="filterDueTableByDays(7)" style="border-color:#EF4444; color:#EF4444; font-weight:700; padding:4px 10px; font-size:11px; border-radius:8px; cursor:pointer;">
+          📋 View List
+        </button>
+      </div>
+
+      <div style="padding:14px 16px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px;">
+          <div>
+            <div style="font-size:26px; font-weight:900; color:#EF4444;" id="middleDue7Count">14</div>
+            <div style="font-size:11px; color:var(--text-muted); font-weight:600;">Policies due in 7 days</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-size:15px; font-weight:800; color:var(--text-primary);" id="middleDue7Amount">₹1,84,500</div>
+            <div style="font-size:10.5px; color:var(--text-muted);">Due Premium</div>
+          </div>
+        </div>
+
+        <!-- Mini Chart Canvas Container -->
+        <div style="height:100px; width:100%; position:relative;">
+          <canvas id="chartDue7Canvas" style="width:100% !important; height:100% !important;"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2: DUE 30 DAYS -->
+    <div class="card" style="margin-bottom:0; border-radius:12px; border-top:4px solid #F59E0B; box-shadow:0 4px 14px rgba(0,0,0,0.05); min-width:0;">
+      <div style="padding:14px 16px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color);">
+        <div>
+          <span style="font-size:11px; font-weight:800; text-transform:uppercase; color:#D97706; letter-spacing:0.5px;">Monthly Due</span>
+          <h4 style="font-size:15px; font-weight:800; margin:2px 0 0 0; color:var(--text-primary);">Due 30 Days</h4>
+        </div>
+        <button type="button" class="btn btn-outline btn-sm" onclick="filterDueTableByDays(30)" style="border-color:#F59E0B; color:#D97706; font-weight:700; padding:4px 10px; font-size:11px; border-radius:8px; cursor:pointer;">
+          📋 View List
+        </button>
+      </div>
+
+      <div style="padding:14px 16px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px;">
+          <div>
+            <div style="font-size:26px; font-weight:900; color:#D97706;" id="middleDue30Count">74</div>
+            <div style="font-size:11px; color:var(--text-muted); font-weight:600;">Policies due in 30 days</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-size:15px; font-weight:800; color:var(--text-primary);" id="middleDue30Amount">₹2,10,515</div>
+            <div style="font-size:10.5px; color:var(--text-muted);">Due Premium</div>
+          </div>
+        </div>
+
+        <!-- Mini Chart Canvas Container -->
+        <div style="height:100px; width:100%; position:relative;">
+          <canvas id="chartDue30Canvas" style="width:100% !important; height:100% !important;"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: LAPSED POLICIES -->
+    <div class="card" style="margin-bottom:0; border-radius:12px; border-top:4px solid #64748B; box-shadow:0 4px 14px rgba(0,0,0,0.05); min-width:0;">
+      <div style="padding:14px 16px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color);">
+        <div>
+          <span style="font-size:11px; font-weight:800; text-transform:uppercase; color:#64748B; letter-spacing:0.5px;">Revival Needed</span>
+          <h4 style="font-size:15px; font-weight:800; margin:2px 0 0 0; color:var(--text-primary);">Lapsed Policies</h4>
+        </div>
+        <button type="button" class="btn btn-outline btn-sm" onclick="filterDueTableLapsed()" style="border-color:#64748B; color:#475569; font-weight:700; padding:4px 10px; font-size:11px; border-radius:8px; cursor:pointer;">
+          🔄 Revival List
+        </button>
+      </div>
+
+      <div style="padding:14px 16px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;">
+          <div>
+            <div style="display:flex; align-items:baseline; gap:8px;">
+              <span style="font-size:26px; font-weight:900; color:#475569;" id="middleLapsedCount">348</span>
+              <span id="middleLapsedRatioBadge" style="background:#fee2e2; color:#b91c1c; font-size:11px; font-weight:800; padding:2px 8px; border-radius:12px; border:1px solid #fca5a5;">--% Portfolio</span>
+            </div>
+            <div style="font-size:11px; color:var(--text-muted); font-weight:600;">Lapsed / Overdue Policies (&gt;120 Days)</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-size:15px; font-weight:800; color:#DC2626;" id="middleLapsedAmount">₹44,41,060</div>
+            <div style="font-size:10.5px; color:var(--text-muted);">Uncollected Premium</div>
+          </div>
+        </div>
+
+        <!-- Year-Wise Lapsed Distribution Bar & Labels -->
+        <div id="middleLapsedYearlyBreakdown" style="display:flex; gap:4px; margin-bottom:8px; font-size:10px; color:#475569; overflow-x:auto; padding-bottom:2px;">
+          <!-- Dynamically populated year-wise % chips -->
+        </div>
+
+        <!-- Mini Chart Canvas Container (Year-Wise % Distribution) -->
+        <div style="height:90px; width:100%; position:relative;">
+          <canvas id="chartLapsedCanvas" style="width:100% !important; height:100% !important;"></canvas>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 2 ROW CHARTS: (1) AGENT CLUB & MDRT TRACKER | (2) AGENT INCOME & PREMIUM COLLECTION -->
+  <div style="display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:18px;" class="middle-2-charts-grid">
+
+    <!-- CHART 1: AGENT CLUB & MDRT TRACKER -->
+    <div class="card" style="margin-bottom:0; border-radius:14px; box-shadow:0 4px 18px rgba(0,0,0,0.06); min-width:0;">
+      <div class="card-header" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; padding:12px 18px; border-bottom:1px solid var(--border-color);">
+        <div>
+          <div class="card-title" style="font-size:14px; font-weight:800; display:flex; align-items:center; gap:8px;">
+            <span>🏆</span>
+            <span>Agent Club & MDRT Tracker</span>
+          </div>
+          <div style="font-size:11px; color:var(--text-muted);">
+            Branch / Division / MDRT / COT / TOT Qualification Level
+          </div>
+        </div>
+        <select id="middleMdrtSelect" class="zoho-select zoho-select-sm" onchange="renderMiddleSectionCharts()" style="padding:4px 8px; font-size:11px; font-weight:700; border-radius:6px; border:1px solid #CBD5E1;">
+          <option value="mdrt" selected>🏆 MDRT (₹10.5L Comm / 40 Lives)</option>
+          <option value="cot">🏅 COT (Court of Table - ₹31.5L Comm)</option>
+          <option value="tot">👑 TOT (Top of Table - ₹63L Comm)</option>
+          <option value="galaxy">🌟 Galaxy Club (₹10L Comm / 33 Lives)</option>
+          <option value="corporate">🏛️ Corporate Club (₹18L Comm / 40 Lives)</option>
+          <option value="chairman">🎖️ Chairman's Club - CM (₹2L / 40 Lives)</option>
+          <option value="zonal">🎗️ ZM Club (₹1.4L / 30 Lives)</option>
+          <option value="divisional">📜 DM Club (₹90k / 25 Lives)</option>
+          <option value="branch">🏢 BM Club (₹50k / 15 Lives)</option>
+        </select>
+      </div>
+
+      <div style="padding:16px 18px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:10px; font-size:12px; background:var(--bg-light, #f8fafc); padding:8px 12px; border-radius:8px; border:1px solid var(--border-color, #e2e8f0);">
+          <div>
+            <span style="color:var(--text-muted, #64748b);">Progress:</span> 
+            <strong id="mdrtProgressPercent" style="color:#00539B; font-size:14px; font-weight:800;">0%</strong>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <div>
+              <span style="color:var(--text-muted, #64748b);">Target Remaining:</span> 
+              <strong id="mdrtRemainingText" style="color:#D97706; font-weight:700;">Calculating...</strong>
+            </div>
+            <div style="padding-left:10px; border-left:2px solid #CBD5E1;">
+              <span style="color:var(--text-muted, #64748b);">Policies Needed:</span> 
+              <strong id="mdrtRemainingPoliciesText" style="color:#EF4444; font-weight:800;">-- Policies</strong>
+            </div>
+          </div>
+        </div>
+        <div style="height:210px; width:100%; position:relative;">
+          <canvas id="middleMdrtChartCanvas" style="width:100% !important; height:100% !important;"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHART 2: AGENT INCOME AND PREMIUM COLLECTION CHART -->
+    <div class="card" style="margin-bottom:0; border-radius:14px; box-shadow:0 4px 18px rgba(0,0,0,0.06); min-width:0;">
+      <div class="card-header" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; padding:12px 18px; border-bottom:1px solid var(--border-color);">
+        <div>
+          <div class="card-title" style="font-size:14px; font-weight:800; display:flex; align-items:center; gap:8px;">
+            <span>💵</span>
+            <span>Agent Income & Premium Collection Chart</span>
+          </div>
+          <div style="font-size:11px; color:var(--text-muted);">
+            Quarterly Premium Inflow vs. Actual Agent Net Commission
+          </div>
+        </div>
+        <select id="middleIncomeFySelect" class="zoho-select zoho-select-sm" onchange="renderMiddleSectionCharts()" style="padding:3px 8px; font-size:11px; font-weight:700;">
+          <option value="2026-2027" selected>FY 2026-27</option>
+          <option value="2025-2026">FY 2025-26</option>
+          <option value="ALL">All Financial Years</option>
+        </select>
+      </div>
+
+      <div style="padding:16px 18px;">
+        <div style="height:224px; width:100%; position:relative;">
+          <canvas id="middleIncomeChartCanvas" style="width:100% !important; height:100% !important;"></canvas>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,56 @@
+<!-- ========================================================================== -->
+<!-- COMPONENT: TOP HEADER (top_header.html)                                     -->
+<!-- Clean English Topbar with Direct APK Download & WhatsApp Integration        -->
+<!-- ========================================================================== -->
+<header class="topbar">
+  <!-- Left Side: Life Insurance Corporation of India -->
+  <div style="display:flex; align-items:center; gap:12px; min-width:320px;">
+    <button type="button" class="mobile-menu-btn" onclick="toggleMobileSidebar()" title="Toggle Sidebar">☰</button>
+    <div class="page-title">
+      <h1 style="font-size:16px; font-weight:800; margin:0; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+        <span style="color:var(--lic-blue);">Life Insurance Corporation of India</span>
+        <span id="appHeaderVersionBadge" class="app-version-badge version-tag" style="font-size:11px; background:linear-gradient(135deg, #00539B, #0284c7); color:#fff; padding:3px 10px; border-radius:12px; font-weight:800; letter-spacing:0.4px;">v13.0 Omni-AI Sentinel</span>
+      </h1>
+      <p style="font-size:11.5px; color:var(--text-muted); margin:2px 0 0 0;">Branch 35D, Bhopal Division • Agent: Sh. Vindhyachal Singh (0273635D) • ✉️ vindhyachal02@gmail.com</p>
+    </div>
+  </div>
+
+  <!-- Center: Quick Search (Spotlight Ctrl + K) -->
+  <div class="topbar-spotlight-pill" onclick="openOmniSearch()" title="Quick Search Policies & Clients (Ctrl + K)" style="max-width:320px; flex:1;">
+    <span style="font-size:14px; color:var(--lic-blue);">🔍</span>
+    <span style="font-size:12.5px; color:var(--text-muted); font-weight:600;">Quick Search or Command (Ctrl + K)...</span>
+    <kbd class="spotlight-kbd">Ctrl K</kbd>
+  </div>
+
+  <!-- Right Side: Birthdays, APK Download, WhatsApp, Language -->
+  <div class="topbar-actions" style="display:flex; align-items:center; gap:10px;">
+    
+    <!-- Customer Birthdays and Anniversaries -->
+    <div id="topHeaderBirthdayWidget" style="display:flex; align-items:center; gap:8px; background:linear-gradient(135deg, rgba(255,209,0,0.15) 0%, rgba(16,185,129,0.15) 100%); border:1px solid #FFD100; border-radius:24px; padding:4px 14px; cursor:pointer;" onclick="openBirthdayAnniversaryModal()" title="View Customer Birthdays and Anniversaries">
+      <span style="font-size:16px;" class="greeting-icon-pulse">🎂</span>
+      <div style="text-align:left; line-height:1.2;">
+        <div style="font-size:11.5px; font-weight:800; color:var(--text-primary);">Birthdays & Anniversaries</div>
+        <div style="font-size:10px; color:#10B981; font-weight:700;" id="topHeaderBdayCount">Checking...</div>
+      </div>
+    </div>
+
+    <!-- Mobile APK Download Button -->
+    <a href="/LIC_Agent_0273635D_Mobile.apk" download class="btn btn-outline btn-sm" style="display:flex; align-items:center; gap:6px; background:linear-gradient(135deg, rgba(16,185,129,0.12) 0%, rgba(56,189,248,0.15) 100%); border:1px solid #10b981; color:#065f46; font-weight:700; text-decoration:none;" title="Download Android Mobile APK">
+      <span style="font-size:14px;">📱</span>
+      <span>Mobile APK</span>
+    </a>
+
+    <!-- WhatsApp Integration Quick Button -->
+    <button type="button" class="btn btn-primary btn-sm" onclick="openWhatsAppComposerModal()" style="display:flex; align-items:center; gap:6px; background:#25D366; border-color:#25D366; font-weight:700; color:#fff;" title="WhatsApp Integration - Send Instant Message">
+      <span style="font-size:14px;">💬</span>
+      <span>WhatsApp</span>
+    </button>
+
+    <!-- Language Switcher Button -->
+    <button type="button" class="btn btn-outline btn-sm lang-toggle-btn" id="btnLangToggle" onclick="toggleAppLanguage()" title="Switch Language (English / Hindi)">
+      <span style="font-size:13px;">🌐</span>
+      <span id="langToggleText" style="font-weight:700;">हिंदी</span>
+      <span class="lang-badge" id="langToggleBadge">HI</span>
+    </button>
+  </div>
+</header>

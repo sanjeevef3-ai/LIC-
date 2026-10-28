@@ -1,0 +1,77 @@
+/* ========================================================================== */
+/* 📱 LIC AGENT SOFTWARE - ULTRA-PREMIUM MOBILE RESPONSIVE ENGINE             */
+/* Guarantees 100% beautiful rendering on Mobile, Tablets and Desktop         */
+/* ========================================================================== */
+
+@media (max-width: 900px) {
+  .top-5-kpi-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* 1. FORCE 1-COLUMN STACK FOR MIDDLE 3 CARDS */
+  .middle-3-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .middle-3-cards-grid .card {
+    border-radius: 12px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* 2. FORCE 1-COLUMN STACK FOR 2 CHARTS GRID */
+  .middle-2-charts-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .middle-2-charts-grid .card {
+    border-radius: 14px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* 3. OPTIMIZE CHART CANVASES FOR MOBILE */
+  #chartLapsedCanvas, #chartDue7Canvas, #chartDue30Canvas {
+    max-height: 110px !important;
+  }
+
+  #middleMdrtChartCanvas {
+    max-height: 220px !important;
+  }
+
+  #middleIncomeChartCanvas {
+    max-height: 230px !important;
+  }
+
+  /* 4. PREVENT OVERFLOW & ENSURE FULL VISIBILITY */
+  .card, .content-body, .tab-pane {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 5. TOP 5 KPI GRID ON PHONE */
+  .top-5-kpi-grid {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+
+  .stat-card {
+    padding: 12px 14px !important;
+  }
+
+  .stat-card .stat-value {
+    font-size: 22px !important;
+  }
+
+  /* 6. TABLE RESPONSIVE SCROLL */
+  .table-responsive {
+    width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+}

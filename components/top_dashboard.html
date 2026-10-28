@@ -1,0 +1,182 @@
+<section id="component-top-dashboard" style="margin-bottom:24px;">
+
+  
+  <!-- 🎂 BIRTHDAY & ANNIVERSARY GREETING BAR -->
+  <div class="birthday-greeting-bar" id="birthdayGreetingBar" style="background:linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border:1px solid rgba(255,209,0,0.3); border-radius:12px; padding:12px 18px; margin-bottom:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; box-shadow:0 4px 14px rgba(0,0,0,0.1);">
+    <div style="display:flex; align-items:center; gap:12px;">
+      <span style="font-size:24px;" class="greeting-icon-pulse">🎂</span>
+      <div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <h4 style="margin:0; font-size:13.5px; font-weight:800; color:#ffffff;">Customer Birthday & Anniversary Hub</h4>
+          <span id="greetingTodayBadge" style="background:#10b981; color:#fff; font-size:10px; font-weight:800; padding:2px 8px; border-radius:12px;">0 Today</span>
+        </div>
+        <p style="margin:2px 0 0 0; font-size:11px; color:#94a3b8;">Send 1-click personalized WhatsApp greetings to policyholders</p>
+      </div>
+    </div>
+    <div class="greeting-chips-row" id="greetingChipsContainer" style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+      <!-- Chips dynamically rendered -->
+    </div>
+  </div>
+
+  <!-- 5 PRIMARY KPI CARDS / BUTTONS (ENGLISH STANDARD, NO OVERFLOW) -->
+  <div style="display:grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap:14px; margin-bottom:20px;" class="top-5-kpi-grid">
+    
+    <!-- 1. Total Policy -->
+    <div class="stat-card blue clickable" onclick="switchAppTab('tab-policies')" style="border-radius:12px; padding:14px 16px; box-shadow:0 4px 14px rgba(0,0,0,0.06); cursor:pointer; flex-direction:column; align-items:stretch; min-width:0;" title="View all 706 policies">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; width:100%;">
+        <div style="min-width:0; flex:1;">
+          <div style="font-size:11.5px; font-weight:700; text-transform:uppercase; color:var(--text-muted); letter-spacing:0.4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">1. Total Policy</div>
+          <div style="font-size:26px; font-weight:900; color:#00539B; margin:4px 0 2px 0; line-height:1.2;" id="kpiTotalPolicies">706</div>
+          <div style="font-size:11px; color:#10b981; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">100% In-Force Portfolio ➔</div>
+        </div>
+        <div style="width:36px; height:36px; border-radius:8px; background:rgba(0,83,155,0.1); color:#00539B; display:flex; align-items:center; justify-content:center; font-size:18px; flex-shrink:0;">📋</div>
+      </div>
+    </div>
+
+    <!-- 2. Total Insured Policyholders -->
+    <div class="stat-card purple clickable" onclick="switchAppTab('tab-customers')" style="border-radius:12px; padding:14px 16px; box-shadow:0 4px 14px rgba(0,0,0,0.06); cursor:pointer; flex-direction:column; align-items:stretch; min-width:0;" title="View all 506 clients">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; width:100%;">
+        <div style="min-width:0; flex:1;">
+          <div style="font-size:11.5px; font-weight:700; text-transform:uppercase; color:var(--text-muted); letter-spacing:0.4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">2. Insured Clients</div>
+          <div style="font-size:26px; font-weight:900; color:#8B5CF6; margin:4px 0 2px 0; line-height:1.2;" id="kpiTotalPolicyholders">506</div>
+          <div style="font-size:11px; color:var(--text-muted); font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Registered Policyholders ➔</div>
+        </div>
+        <div style="width:36px; height:36px; border-radius:8px; background:rgba(139,92,246,0.1); color:#8B5CF6; display:flex; align-items:center; justify-content:center; font-size:18px; flex-shrink:0;">👥</div>
+      </div>
+    </div>
+
+    <!-- 3. Total Sam Assured -->
+    <div class="stat-card gold clickable" onclick="switchAppTab('tab-policies')" style="border-radius:12px; padding:14px 16px; box-shadow:0 4px 14px rgba(0,0,0,0.06); cursor:pointer; flex-direction:column; align-items:stretch; min-width:0;" title="View Total Sum Assured">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; width:100%;">
+        <div style="min-width:0; flex:1;">
+          <div style="font-size:11.5px; font-weight:700; text-transform:uppercase; color:var(--text-muted); letter-spacing:0.4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">3. Sum Assured</div>
+          <div style="font-size:26px; font-weight:900; color:#D97706; margin:4px 0 2px 0; line-height:1.2;" id="kpiTotalSumAssured">₹12.37 Cr</div>
+          <div style="font-size:11px; color:var(--text-muted); font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Total Life Coverage ➔</div>
+        </div>
+        <div style="width:36px; height:36px; border-radius:8px; background:rgba(245,158,11,0.12); color:#D97706; display:flex; align-items:center; justify-content:center; font-size:18px; flex-shrink:0;">🛡️</div>
+      </div>
+    </div>
+
+    <!-- 4. Total Premium Deposit -->
+    <div class="stat-card green" style="border-radius:12px; padding:14px 16px; box-shadow:0 4px 14px rgba(0,0,0,0.06); flex-direction:column; align-items:stretch; min-width:0;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px; width:100%; gap:6px;">
+        <span style="font-size:11px; font-weight:700; text-transform:uppercase; color:var(--text-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">4. Premium Deposit</span>
+        <select id="kpiPremiumYearSelect" class="zoho-select zoho-select-sm" onchange="updateKpiDynamicCards()" style="padding:1px 4px; font-size:10px; font-weight:700; background:var(--card-bg); color:var(--text-primary); border-radius:4px; border:1px solid var(--border-color); flex-shrink:0;">
+          <option value="2026-2027" selected>FY 2026-27</option>
+          <option value="2025-2026">FY 2025-26</option>
+          <option value="2024-2025">FY 2024-25</option>
+          <option value="ALL">All Years</option>
+        </select>
+      </div>
+      <div style="font-size:24px; font-weight:900; color:#059669; margin:2px 0; line-height:1.2; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" id="kpiTotalPremiumDeposit">₹58,55,478</div>
+      <div style="font-size:10.5px; color:#059669; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" id="kpiPremiumDepositSub">Annual Premium Collected</div>
+    </div>
+
+    <!-- 5. Agent Commission -->
+    <div class="stat-card gold" style="border-radius:12px; padding:14px 16px; box-shadow:0 4px 14px rgba(0,0,0,0.06); flex-direction:column; align-items:stretch; min-width:0;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px; width:100%; gap:4px;">
+        <span style="font-size:11px; font-weight:700; text-transform:uppercase; color:var(--text-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">5. Commission</span>
+        <div style="display:flex; gap:2px; flex-shrink:0;">
+          <select id="kpiCommYearSelect" class="zoho-select zoho-select-sm" onchange="updateKpiDynamicCards()" style="padding:1px 3px; font-size:10px; font-weight:700; background:var(--card-bg); color:var(--text-primary); border-radius:4px; border:1px solid var(--border-color);">
+            <option value="2026-2027" selected>26-27</option>
+            <option value="2025-2026">25-26</option>
+            <option value="ALL">All</option>
+          </select>
+          <select id="kpiCommMonthSelect" class="zoho-select zoho-select-sm" onchange="updateKpiDynamicCards()" style="padding:1px 3px; font-size:10px; font-weight:700; background:var(--card-bg); color:var(--text-primary); border-radius:4px; border:1px solid var(--border-color);">
+            <option value="ALL" selected>All Months</option>
+            <option value="1">Jan</option>
+            <option value="2">Feb</option>
+            <option value="3">Mar</option>
+            <option value="4">Apr</option>
+            <option value="5">May</option>
+            <option value="6">Jun</option>
+            <option value="7">Jul</option>
+            <option value="8">Aug</option>
+            <option value="9">Sep</option>
+            <option value="10">Oct</option>
+            <option value="11">Nov</option>
+            <option value="12">Dec</option>
+          </select>
+        </div>
+      </div>
+      <div style="font-size:24px; font-weight:900; color:#D97706; margin:2px 0; line-height:1.2; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" id="kpiAgentCommission">₹14,63,869</div>
+      <div style="font-size:10.5px; color:#D97706; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" id="kpiAgentCommissionSub">Active In-Force (Excl. Lapsed)</div>
+    </div>
+  </div>
+
+  <!-- JUST NICHE: DYNAMIC ANALYTICS CHART WITH YEAR/MONTH DROPDOWNS -->
+  <div class="card" style="margin-bottom:0; border-radius:14px; box-shadow:0 4px 18px rgba(0,0,0,0.06);">
+    <div class="card-header" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; padding:12px 18px; border-bottom:1px solid var(--border-color);">
+      <div>
+        <div class="card-title" style="font-size:14.5px; font-weight:800; display:flex; align-items:center; gap:8px;">
+          <span>📊</span>
+          <span>Business & Financial Analytics (Real-Time Trend)</span>
+        </div>
+        <div style="font-size:11.5px; color:var(--text-muted); margin-top:2px;">
+          Premium Collection, Real Agent Commission & Active Policies (Auto Synced)
+        </div>
+      </div>
+
+      <!-- Controls: Year / Month Dropdowns -->
+      <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+        <!-- Year Dropdown -->
+        <div style="display:flex; align-items:center; gap:4px;">
+          <label style="font-size:11.5px; font-weight:700; color:var(--text-muted); margin:0;">FY:</label>
+          <select id="chartUnifiedFySelect" class="zoho-select zoho-select-sm" onchange="renderUnifiedDashboardChart()" style="padding:4px 8px; font-size:11.5px; font-weight:700; border-radius:6px;">
+            <option value="2026-2027" selected>FY 2026-27 (Current)</option>
+            <option value="2025-2026">FY 2025-26</option>
+            <option value="2024-2025">FY 2024-25</option>
+            <option value="ALL">All Years</option>
+          </select>
+        </div>
+
+        <!-- Month / Timeframe Dropdown -->
+        <div style="display:flex; align-items:center; gap:4px;">
+          <label style="font-size:11.5px; font-weight:700; color:var(--text-muted); margin:0;">View:</label>
+          <select id="chartUnifiedTimeframeSelect" class="zoho-select zoho-select-sm" onchange="renderUnifiedDashboardChart()" style="padding:4px 8px; font-size:11.5px; font-weight:700; border-radius:6px;">
+            <option value="monthly" selected>Monthly (12 Months)</option>
+            <option value="quarterly">Quarterly (Q1, Q2, Q3, Q4)</option>
+            <option value="annual">Annual Trend</option>
+          </select>
+        </div>
+
+        <!-- Metric Switcher -->
+        <div style="display:flex; align-items:center; gap:4px;">
+          <label style="font-size:11.5px; font-weight:700; color:var(--text-muted); margin:0;">Data:</label>
+          <select id="chartUnifiedMetricSelect" class="zoho-select zoho-select-sm" onchange="renderUnifiedDashboardChart()" style="padding:4px 8px; font-size:11.5px; font-weight:700; border-radius:6px;">
+            <option value="both" selected>Premium + Commission (Both)</option>
+            <option value="premium">Premium Collection Only</option>
+            <option value="commission">Agent Commission Only</option>
+            <option value="policies">Policy Count Growth</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart Canvas Container -->
+    <div style="padding:16px 20px; position:relative; height:280px; width:100%;">
+      <canvas id="unifiedDashboardChartCanvas" style="width:100% !important; height:100% !important;"></canvas>
+    </div>
+
+    <!-- Chart Legend & Summary Bar -->
+    <div style="padding:10px 18px; background:var(--bg-secondary, #f8fafc); border-top:1px solid var(--border-color); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; font-size:12px;">
+      <div style="display:flex; align-items:center; gap:16px;">
+        <span style="display:inline-flex; align-items:center; gap:6px;">
+          <span style="width:12px; height:12px; background:#00539B; border-radius:3px; display:inline-block;"></span>
+          <span>Total Premium: <strong id="chartLegendPremium">₹0</strong></span>
+        </span>
+        <span style="display:inline-flex; align-items:center; gap:6px;">
+          <span style="width:12px; height:12px; background:#F59E0B; border-radius:3px; display:inline-block;"></span>
+          <span>Agent Commission: <strong id="chartLegendCommission">₹0</strong></span>
+        </span>
+        <span style="display:inline-flex; align-items:center; gap:6px;">
+          <span style="width:12px; height:12px; background:#10B981; border-radius:3px; display:inline-block;"></span>
+          <span>In-Force Policies: <strong id="chartLegendPolicies">706</strong></span>
+        </span>
+      </div>
+      <div style="color:var(--text-muted); font-size:11px;">
+        ⚡ Real-time calculation based on active in-force portfolio
+      </div>
+    </div>
+  </div>
+</section>
