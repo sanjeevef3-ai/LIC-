@@ -1,4 +1,4 @@
-// Ensure fresh 720 dataset is forcefully loaded and obsolete client localStorage is cleared
+// Ensure fresh 706 dataset is forcefully loaded and obsolete client localStorage is cleared
 if (typeof localStorage !== 'undefined') {
   if (localStorage.getItem('LIC_APP_DATA_VERSION') !== '13.0') {
     localStorage.removeItem('LIC_APP_DATA');
@@ -780,7 +780,7 @@ function applyVerifiedCorrections(data) {
 function hydrateDataFast() {
   let loaded = false;
 
-  // Always load official EMBEDDED_LIC_DATA directly (720 policies) to ensure fresh data
+  // Always load official EMBEDDED_LIC_DATA directly (706 policies) to ensure fresh data
   if (typeof window !== 'undefined' && window.EMBEDDED_LIC_DATA && Array.isArray(window.EMBEDDED_LIC_DATA.policies) && window.EMBEDDED_LIC_DATA.policies.length >= 700) {
     try {
       appData = JSON.parse(JSON.stringify(window.EMBEDDED_LIC_DATA));
@@ -11424,6 +11424,9 @@ function switchAppTab(tabId, isBackNav) {
   const activePane = document.getElementById(tabId);
   if (activePane) {
     activePane.classList.add('active');
+  }
+  if (tabId === 'tab-families' && typeof window.renderFamilyPortfolioTab === 'function') {
+    window.renderFamilyPortfolioTab();
   }
 
   // 3. Update or inject Universal Sticky Back Button

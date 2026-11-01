@@ -4062,7 +4062,54 @@ LIC अभिकर्ता (कोड: LIC0273635D)
         </div>
       </section>
 
-    </main>
+    
+      <!-- 18. FAMILY PORTFOLIO MASTER TAB (PERFECT AGENT PLUS COMPLIANT) -->
+      <section id="tab-families" class="tab-pane">
+
+  <!-- ◀ UNIFIED BREADCRUMB & PREVIOUS PAGE BACK BAR -->
+  <div style="background:#ffffff; border-radius:12px; padding:10px 18px; margin-bottom:18px; display:flex; align-items:center; justify-content:space-between; box-shadow:0 2px 10px rgba(0,0,0,0.04); border:1px solid #e2e8f0; flex-wrap:wrap; gap:10px;">
+    <div style="display:flex; align-items:center; gap:8px; font-size:13px; font-weight:700; color:#475569;">
+      <button onclick="goBackTab()" style="background:#f1f5f9; border:1px solid #cbd5e1; border-radius:8px; padding:5px 12px; font-size:12px; font-weight:800; color:#1e293b; cursor:pointer; display:inline-flex; align-items:center; gap:5px;">
+        <span style="color:#d97706;">◀</span> वापस (Back)
+      </button>
+      <span style="color:#cbd5e1;">/</span>
+      <span style="color:#64748b;">होम (Home)</span>
+      <span style="color:#cbd5e1;">/</span>
+      <span style="color:#0284c7;">👨‍👩‍👧‍👦 फैमिली पोर्टफोलियो मास्टर (Family Portfolio)</span>
+    </div>
+    <div style="display:flex; align-items:center; gap:8px;">
+      <span style="background:#ecfdf5; color:#065f46; font-size:11px; font-weight:800; padding:4px 10px; border-radius:20px; border:1px solid #a7f3d0;">
+        ✓ 90 सत्यापित परिवार इकाइयां
+      </span>
+      <span style="background:#eff6ff; color:#1e40af; font-size:11px; font-weight:800; padding:4px 10px; border-radius:20px; border:1px solid #bfdbfe;">
+        सरनेम नहीं • सह-आवासीय पता आधारित
+      </span>
+    </div>
+  </div>
+
+  <div class="card" style="border-radius:16px; box-shadow:0 4px 20px rgba(0,0,0,0.05); border:1px solid #e2e8f0; margin-bottom:24px; padding:20px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:20px;">
+      <div>
+        <h2 style="margin:0; font-size:20px; font-weight:800; color:#0f172a; display:flex; align-items:center; gap:8px;">
+          <span>👨‍👩‍👧‍👦</span> फैमिली पोर्टफोलियो मास्टर (Family Portfolio Master)
+        </h2>
+        <p style="margin:4px 0 0; font-size:13px; color:#64748b;">
+          एक ही परिवार (माता-पिता, बच्चे, पति-पत्नी) की सभी पॉलिसियों का समेकित ब्योरा व 1-क्लिक फैमिली इंश्योरेंस चार्ट
+        </p>
+      </div>
+      <div style="display:flex; gap:10px;">
+        <input type="text" id="familySearchInput" onkeyup="filterFamilyCards()" placeholder="🔍 परिवार या सदस्य खोजें..." style="padding:8px 14px; border-radius:8px; border:1px solid #cbd5e1; font-size:13px; width:220px;">
+      </div>
+    </div>
+
+    <!-- Family Grid Container -->
+    <div id="familyCardsGrid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap:16px;">
+      <!-- Populated dynamically by renderFamilyPortfolioTab() -->
+    </div>
+  </div>
+
+      </section>
+</main>
 
   <!-- 4. OFFICIAL FOOTER -->
     <!-- ========================================================================== -->

@@ -59,7 +59,7 @@ function updateKpiDynamicCards() {
 
   // 1. Total Policies
   const elPol = document.getElementById('kpiTotalPolicies');
-  if (elPol) elPol.innerText = policies.length || 720;
+  if (elPol) elPol.innerText = policies.length || 706;
 
   // 2. Total Insured Policyholders
   const elCust = document.getElementById('kpiTotalPolicyholders');
@@ -209,7 +209,7 @@ function renderUnifiedDashboardChart() {
     labels = ['2023-24', '2024-25', '2025-26', '2026-27 (Current)'];
     premiumData = [4250000, 4980000, 5420000, 5855478];
     commissionData = [531250, 622500, 677500, 731935];
-    policiesCountData = [520, 610, 680, 720];
+    policiesCountData = [520, 610, 680, 706];
   } else {
     // monthly default
     labels = ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar'];
@@ -257,7 +257,7 @@ function renderUnifiedDashboardChart() {
   const elLegPol = document.getElementById('chartLegendPolicies');
   if (elLegPrem) elLegPrem.innerText = '₹' + totalPrem.toLocaleString('en-IN');
   if (elLegComm) elLegComm.innerText = '₹' + totalComm.toLocaleString('en-IN');
-  if (elLegPol) elLegPol.innerText = activePolicies.length || 720;
+  if (elLegPol) elLegPol.innerText = activePolicies.length || 706;
 
   const datasets = [];
   if (metric === 'both' || metric === 'premium') {
@@ -405,7 +405,7 @@ function renderMiddleSectionCharts() {
   if (elLapA) elLapA.innerText = '₹' + lapsedAmt.toLocaleString('en-IN');
 
   // Lapsed ratio over total portfolio
-  const totalPoliciesCount = policies.length || 720;
+  const totalPoliciesCount = policies.length || 706;
   const lapsedRatioPct = ((lapsedCount / totalPoliciesCount) * 100).toFixed(1);
   const elRatioBadge = document.getElementById('middleLapsedRatioBadge');
   if (elRatioBadge) {

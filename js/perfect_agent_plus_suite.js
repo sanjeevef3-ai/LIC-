@@ -22,8 +22,96 @@
   };
 
   // -------------------------------------------------------------
-  // 1. FAMILY PORTFOLIO MASTER
+  // 1. FAMILY PORTFOLIO MASTER - RENDER TAB & MODAL
   // -------------------------------------------------------------
+  window.renderFamilyPortfolioTab = function() {
+    const grid = document.getElementById('familyCardsGrid');
+    if (!grid) return;
+
+    let db = window.appData || window.EMBEDDED_LIC_DATA || {};
+    let families = db.families || [];
+    let policies = db.policies || [];
+
+    if (!families || families.length === 0) {
+      grid.innerHTML = `
+        <div style="grid-column: 1/-1; text-align:center; padding:40px; background:#f8fafc; border-radius:12px; border:1px dashed #cbd5e1;">
+          <div style="font-size:32px; margin-bottom:10px;">👨‍👩‍👧‍👦</div>
+          <div style="font-size:16px; font-weight:700; color:#334155;">कोई सत्यापित परिवार रिकॉर्ड नहीं मिला</div>
+          <p style="font-size:13px; color:#64748b; margin-top:4px;">कृपया डेटाबेस को रीलोड करें।</p>
+        </div>
+      `;
+      return;
+    }
+
+    grid.innerHTML = families.map(fam => {
+      return `
+        <div class="family-card-item" data-name="${(fam.familyName + ' ' + fam.members.join(' ')).toLowerCase()}" style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:18px; box-shadow:0 2px 10px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.2s, box-shadow 0.2s;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px;">
+              <div>
+                <span style="background:#eff6ff; color:#1d4ed8; font-size:11px; font-weight:800; padding:2px 8px; border-radius:10px;">${fam.familyId}</span>
+                <h3 style="margin:6px 0 2px; font-size:16px; font-weight:800; color:#0f172a;">${fam.familyName}</h3>
+                <div style="font-size:12px; color:#64748b;">📞 ${fam.primaryMobile}</div>
+              </div>
+              <div style="background:#ecfdf5; border:1px solid #a7f3d0; padding:4px 8px; border-radius:8px; text-align:center;">
+                <div style="font-size:10px; color:#047857; font-weight:bold;">पॉलिसियां</div>
+                <div style="font-size:14px; font-weight:800; color:#065f46;">${fam.totalPolicies}</div>
+              </div>
+            </div>
+
+            <div style="font-size:12px; color:#475569; margin-bottom:8px; line-height:1.4;">
+              📍 <b>पता:</b> ${fam.primaryAddress ? fam.primaryAddress.substring(0, 55) + '...' : 'भोपाल, मध्य प्रदेश'}
+            </div>
+
+            <!-- Members List Tags -->
+            <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:12px;">
+              ${fam.members.map(m => `
+                <span style="background:#f1f5f9; color:#334155; font-size:11px; padding:3px 8px; border-radius:6px; font-weight:600;">
+                  👤 ${m}
+                </span>
+              `).join('')}
+            </div>
+
+            <!-- Total SA & Premium Metric Box -->
+            <div style="background:#f8fafc; border:1px solid #f1f5f9; border-radius:10px; padding:10px; display:flex; justify-content:space-between; margin-bottom:14px;">
+              <div>
+                <div style="font-size:11px; color:#64748b;">कुल बीमा सुरक्षा</div>
+                <div style="font-size:13px; font-weight:800; color:#1e40af;">₹${fam.totalSumAssured.toLocaleString('en-IN')}</div>
+              </div>
+              <div style="text-align:right;">
+                <div style="font-size:11px; color:#64748b;">वार्षिक प्रीमियम</div>
+                <div style="font-size:13px; font-weight:800; color:#b45309;">₹${fam.totalPremium.toLocaleString('en-IN')}</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px;">
+            <button onclick="window.openFamilyPortfolioModal('${fam.familyId}')" style="background:#0284c7; color:#fff; border:none; padding:8px 12px; border-radius:8px; font-size:12px; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:5px;">
+              <span>👁️</span> चार्ट देखें
+            </button>
+            <button onclick="window.shareFamilyPortfolioWhatsApp('${fam.familyId}')" style="background:#25D366; color:#fff; border:none; padding:8px 12px; border-radius:8px; font-size:12px; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:5px;">
+              <span>💬</span> WhatsApp
+            </button>
+          </div>
+        </div>
+      `;
+    }).join('');
+  };
+
+  window.filterFamilyCards = function() {
+    let q = (document.getElementById('familySearchInput')?.value || '').toLowerCase().trim();
+    let cards = document.querySelectorAll('.family-card-item');
+    cards.forEach(c => {
+      let name = c.getAttribute('data-name') || '';
+      if (!q || name.includes(q)) {
+        c.style.display = 'flex';
+      } else {
+        c.style.display = 'none';
+      }
+    });
+  };
+
   window.openFamilyPortfolioModal = function(familyId) {
     let db = window.appData || window.EMBEDDED_LIC_DATA || {};
     let families = db.families || [];
@@ -130,7 +218,6 @@
       </div>
     `;
 
-    // Remove any existing modal
     let old = document.getElementById('modalFamilyPortfolio');
     if (old) old.remove();
     document.body.insertAdjacentHTML('beforeend', html);
@@ -164,8 +251,6 @@
   // 2. VISITING / DIGITAL SMART BUSINESS CARD (NFC & QR)
   // -------------------------------------------------------------
   window.openDigitalBusinessCard = function() {
-    let vcardData = `BEGIN:VCARD\nVERSION:3.0\nN:Singh;Vindhyachal;;;\nFN:Sh. Vindhyachal Singh\nORG:Life Insurance Corporation of India (LIC)\nTITLE:LIC Advisor (Branch 35D Bhopal)\nTEL;TYPE=CELL,VOICE:9406935622\nEMAIL:vindhyachal02@gmail.com\nURL:https://sanjeevef3-ai.github.io/LIC-/\nNOTE:Agent Code: 0273635D | Bhopal Branch 35D\nEND:VCARD`;
-
     let html = `
       <div id="modalDigitalCard" class="modal" style="display:flex; position:fixed; z-index:99999; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.75); backdrop-filter:blur(5px); align-items:center; justify-content:center; padding:12px;">
         <div style="background:#0f172a; border-radius:24px; max-width:420px; width:100%; overflow:hidden; box-shadow:0 25px 60px rgba(0,0,0,0.5); border:1px solid #334155; font-family:'Segoe UI',Roboto,sans-serif; color:#fff; position:relative;">
@@ -263,7 +348,6 @@
     let db = window.appData || window.EMBEDDED_LIC_DATA || {};
     let policies = db.policies || [];
 
-    // Calculate approximate FYP vs Renewal based on DOC year
     let currentYear = 2026;
     let fypTotal = 0;
     let renewalTotal = 0;
@@ -278,10 +362,10 @@
       }
     });
 
-    let fypComm = Math.round(fypTotal * 0.25); // Average 25% on 1st Year
-    let renewalComm = Math.round(renewalTotal * 0.05); // Average 5% on Renewal
+    let fypComm = Math.round(fypTotal * 0.25);
+    let renewalComm = Math.round(renewalTotal * 0.05);
     let grossCommission = fypComm + renewalComm;
-    let tdsDeduction = Math.round(grossCommission * 0.05); // 5% TDS under 194D
+    let tdsDeduction = Math.round(grossCommission * 0.05);
     let netPayable = grossCommission - tdsDeduction;
 
     let html = `
@@ -300,7 +384,6 @@
           </div>
 
           <div style="padding:20px;">
-            <!-- Summary Metric Cards -->
             <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; margin-bottom:20px;">
               <div style="background:#ecfdf5; border:1px solid #a7f3d0; padding:14px; border-radius:12px; text-align:center;">
                 <div style="font-size:11px; color:#047857; font-weight:bold;">प्रथम वर्ष कमीशन (FYP 25%)</div>
@@ -320,7 +403,6 @@
               </div>
             </div>
 
-            <!-- Commission Slab Matrix -->
             <h4 style="margin:0 0 10px; font-size:14px; color:#1e293b;">📊 LIC आधिकारिक कमीशन स्लैब संरचना</h4>
             <div style="overflow-x:auto; border:1px solid #e2e8f0; border-radius:10px; margin-bottom:20px;">
               <table style="width:100%; border-collapse:collapse; font-size:13px; text-align:left;">
@@ -355,7 +437,6 @@
               </table>
             </div>
 
-            <!-- Actions -->
             <div style="display:flex; justify-content:flex-end; gap:12px;">
               <button onclick="window.print()" style="background:#059669; color:#fff; border:none; padding:10px 18px; border-radius:8px; font-weight:bold; cursor:pointer;">
                 🖨️ लेजर प्रिंट / PDF
@@ -398,27 +479,21 @@
           </div>
 
           <div style="padding:20px;">
-            <!-- Festival Selector -->
             <label style="font-weight:700; font-size:13px; color:#334155; display:block; margin-bottom:6px;">त्योहार / अवसर चुनें:</label>
             <select id="selectPosterOccasion" onchange="window.updatePosterPreview()" style="width:100%; padding:10px 14px; border-radius:10px; border:1px solid #cbd5e1; font-size:14px; margin-bottom:16px;">
               ${festivals.map(f => `<option value="${f.id}">${f.name}</option>`).join('')}
             </select>
 
-            <!-- Poster Canvas Card Preview -->
             <div id="posterPreviewBox" style="background:linear-gradient(135deg, #7c2d12, #b45309); border-radius:16px; padding:24px; color:#fff; text-align:center; position:relative; box-shadow:0 10px 30px rgba(0,0,0,0.25);">
-              
-              <!-- Top LIC Logo Tag -->
               <div style="font-size:13px; font-weight:800; letter-spacing:1px; background:rgba(0,0,0,0.3); display:inline-block; padding:4px 14px; border-radius:20px; margin-bottom:16px;">
                 🏛️ भारतीय जीवन बीमा निगम (LIC)
               </div>
 
-              <!-- Main Greeting Title -->
               <h2 id="posterTitle" style="margin:0 0 10px; font-size:26px; font-weight:800; text-shadow:0 2px 4px rgba(0,0,0,0.3); color:#fef08a;">शुभ दीपावली</h2>
               <p id="posterText" style="margin:0 auto 20px; font-size:14px; line-height:1.5; max-width:480px; opacity:0.95;">
                 माँ लक्ष्मी आपके घर सुख, शांति और समृद्धि लाएं। आपके परिवार की आर्थिक सुरक्षा हमारी सर्वोच्च प्राथमिकता है।
               </p>
 
-              <!-- Agent Profile Strip -->
               <div style="background:rgba(255,255,255,0.15); backdrop-filter:blur(6px); border-radius:14px; padding:12px 16px; display:flex; align-items:center; justify-content:space-between; margin-top:20px; border:1px solid rgba(255,255,255,0.2);">
                 <div style="display:flex; align-items:center; gap:12px; text-align:left;">
                   <img src="${AGENT_INFO.photoUrl}" onerror="this.src='data/icon-192.png'" style="width:50px; height:50px; border-radius:50%; object-fit:cover; border:2px solid #fff;" alt="Agent">
@@ -436,7 +511,6 @@
 
             </div>
 
-            <!-- Download / Share Actions -->
             <div style="display:flex; justify-content:flex-end; gap:12px; margin-top:20px;">
               <button onclick="window.sharePosterWhatsApp()" style="background:#25D366; color:#fff; border:none; padding:12px 20px; border-radius:10px; font-size:14px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:8px;">
                 <span>💬</span> WhatsApp पर शेयर करें
@@ -490,5 +564,10 @@
     
     window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, '_blank');
   };
+
+  // Auto-init on page load and tab switch hook
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(window.renderFamilyPortfolioTab, 300);
+  });
 
 })();

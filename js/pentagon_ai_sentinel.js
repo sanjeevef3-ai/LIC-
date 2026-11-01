@@ -3,7 +3,7 @@
 // ==============================================================================
 // 1. AI Auto-Healer & Loop-Trap Breaker (Kills reload loops, silences runtime errors, repairs DOM)
 // 2. AI Cache-Buster & Auto-Upgrade Sentinel (Strict midnight, zero daytime reload, auto-lockdown)
-// 3. AI Data-Integrity Guard (Validates 720 policies, 506 clients & locks vindhyachal02@gmail.com)
+// 3. AI Data-Integrity Guard (Validates 706 policies, 506 clients & locks vindhyachal02@gmail.com)
 // 4. AI Performance & Memory Optimizer (Cleans zombie charts, detached DOM & memory leaks)
 // 5. AI Network & Server Resilience Beacon (Auto-reconnects live tunnels & syncs state)
 // ==============================================================================
@@ -43,7 +43,7 @@
     } catch (e) {}
   }
 
-  console.log("%c🛡️ [PENTAGON 5-AI SENTINEL v13.0] Background Autonomous Sentinel Active", "color:#10b981; font-weight:bold; font-size:12px;");
+  console.log("%c🛡️ [PENTAGON 5-AI SENTINEL v14.0] Background Autonomous Sentinel Active", "color:#10b981; font-weight:bold; font-size:12px;");
 
   const SENTINEL_STATE = {
     currentVersion: (window.LIC_APP_CONFIG && window.LIC_APP_CONFIG.VERSION_NUM) || "13.0",
