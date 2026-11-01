@@ -28973,5 +28973,1709 @@
     "dueToday": "प्रिय [ग्राहक का नाम] जी, 🙏\n\nआपकी LIC पॉलिसी संख्या [पॉलिसी नंबर] का प्रीमियम ₹[राशि]/- आज देय है।\n\nबिना किसी रुकावट के लाइफ कवर और बोनस लाभ जारी रखने के लिए कृपया आज ही PhonePe, Google Pay, Paytm या licindia.in के माध्यम से भुगतान पूरा करें।\n\nधन्यवाद,\nविंध्याचल सिंह\nLIC अभिकर्ता (कोड: LIC0273635D)\nशाखा: 35D, भोपाल\nमोबाइल: 9406935622",
     "grace": "प्रिय [ग्राहक का नाम] जी, 🙏\n\nआपकी LIC पॉलिसी संख्या [पॉलिसी नंबर] का प्रीमियम भुगतान अभी तक लंबित है और ग्रेस पीरियड की अंतिम तिथि [तारीख] है।\n\nइसके बाद भुगतान करने पर लेट फीस लगेगी और पॉलिसी का रिस्क कवर भी प्रभावित हो सकता है। किसी भी असुविधा से बचने के लिए ₹[राशि]/- का प्रीमियम आज ही PhonePe, Google Pay, Paytm अथवा licindia.in के माध्यम से जमा करें।\n\nधन्यवाद,\nविंध्याचल सिंह\nLIC अभिकर्ता (कोड: LIC0273635D)\nशाखा: 35D, भोपाल\nमोबाइल: 9406935622",
     "overdue": "प्रिय [ग्राहक का नाम] जी, 🙏\n\nआपकी LIC पॉलिसी संख्या [पॉलिसी नंबर] का प्रीमियम बकाया होने के कारण पॉलिसी लैप्स हो गई है।\n\nपॉलिसी बंद रहने से आपका जोखिम सुरक्षा कवच रुक जाता है और भविष्य के मिलने वाले लाभ भी प्रभावित होते हैं। इसे सरल प्रक्रिया द्वारा पुनः शुरू किया जा सकता है।\n\nविलंब शुल्क और पुनर्चलन प्रक्रिया की सटीक जानकारी के लिए आज ही संपर्क करें ताकि आपकी पॉलिसी तुरंत बहाल हो सके।\n\nधन्यवाद,\nविंध्याचल सिंह\nLIC अभिकर्ता (कोड: LIC0273635D)\nशाखा: 35D, भोपाल\nमोबाइल: 9406935622"
-  }
+  },
+  "families": [
+    {
+      "familyId": "FAM-0001",
+      "familyName": "RITIKA BHISE Family",
+      "primaryMobile": "9977362926",
+      "primaryAddress": "ADARSH NAGAR  HNO.-171 GOVINDPURA INDUSTREES AREA",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "RITIKA BHISE",
+        "DEVENDRA BHESE",
+        "NEELESH BHISE"
+      ],
+      "policyNumbers": [
+        "354566046",
+        "369586809",
+        "369586807"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 300000,
+      "totalPremium": 5237
+    },
+    {
+      "familyId": "FAM-0002",
+      "familyName": "KAILASH SINGH Family",
+      "primaryMobile": "7747087730",
+      "primaryAddress": "Hno.-71, Kailash Nagar Semra Kala Bhopal 462000",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "KAILASH SINGH"
+      ],
+      "policyNumbers": [
+        "354566129",
+        "354566130",
+        "354566131",
+        "354566132"
+      ],
+      "totalPolicies": 4,
+      "totalSumAssured": 300000,
+      "totalPremium": 8309
+    },
+    {
+      "familyId": "FAM-0003",
+      "familyName": "MUKESH KUSHWAHA Family",
+      "primaryMobile": "8269595844",
+      "primaryAddress": "10-E, Industrial Area Govindpura Bhopal M.P. 462023",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "MUKESH KUSHWAHA",
+        "SUNITA KUSHWAHA"
+      ],
+      "policyNumbers": [
+        "354566124",
+        "354566125"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 200000,
+      "totalPremium": 4395
+    },
+    {
+      "familyId": "FAM-0004",
+      "familyName": "MANOJ GIRI Family",
+      "primaryMobile": "9981005317",
+      "primaryAddress": "Hno.-150-16-Acar Bagmugaliya Giri Mohalla Near Shiv Mandir Bhopal M.P. 462043",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "MANOJ GIRI",
+        "RINKU DEVI"
+      ],
+      "policyNumbers": [
+        "354566136",
+        "354572082",
+        "354797982"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 262500,
+      "totalPremium": 9697
+    },
+    {
+      "familyId": "FAM-0005",
+      "familyName": "HEMRAJ SINGH KUSHWAHA Family",
+      "primaryMobile": "8871187221",
+      "primaryAddress": "27- Ekta Nagar Govindpura Bhopal M.P. 462023",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "HEMRAJ SINGH KUSHWAHA",
+        "RAJEEV SINGH KUSHWAH",
+        "RAGHUVEER SINGH KUSHWAHA",
+        "HEMRAJ SINGH"
+      ],
+      "policyNumbers": [
+        "354566133",
+        "354768091",
+        "354793638",
+        "205057275"
+      ],
+      "totalPolicies": 4,
+      "totalSumAssured": 475000,
+      "totalPremium": 127493
+    },
+    {
+      "familyId": "FAM-0006",
+      "familyName": "MAYANK SINGH Family",
+      "primaryMobile": "9425648338",
+      "primaryAddress": "LIG  II/219. BAGHMUGALIA EXT  LAHARPUR BHOAPL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "MAYANK SINGH",
+        "RASH BIHARI SINGH"
+      ],
+      "policyNumbers": [
+        "354566137",
+        "389693400"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 250000,
+      "totalPremium": 3641
+    },
+    {
+      "familyId": "FAM-0007",
+      "familyName": "NEHA VISHWAKARMA Family",
+      "primaryMobile": "9589715939",
+      "primaryAddress": "H.NO. 21 - BIJLI COLONY ANAND NAGAR BH0PAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "NEHA VISHWAKARMA",
+        "TEJENDRA VISHWAKARMA"
+      ],
+      "policyNumbers": [
+        "354566050",
+        "354786219",
+        "354786218"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 225000,
+      "totalPremium": 2391
+    },
+    {
+      "familyId": "FAM-0008",
+      "familyName": "AVADH NARAYAN SHAKYA Family",
+      "primaryMobile": "9893105920",
+      "primaryAddress": "71, KAILASH NAGAR SEMRA KALAN, BHOPAL M.P.",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "AVADH NARAYAN SHAKYA"
+      ],
+      "policyNumbers": [
+        "354570566",
+        "354570567",
+        "354570564"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 200000,
+      "totalPremium": 4943
+    },
+    {
+      "familyId": "FAM-0009",
+      "familyName": "HASEEB -UL- HASAN Family",
+      "primaryMobile": "9165832537",
+      "primaryAddress": "H.NO-329,SONIYA GANDHI COLONY AISHBAGH HUZUR BHOPAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "HASEEB -UL- HASAN",
+        "MUJEEB UL HASAN",
+        "HASEEB UL HASAN"
+      ],
+      "policyNumbers": [
+        "354569491",
+        "354569490",
+        "205176055"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 1400000,
+      "totalPremium": 78673
+    },
+    {
+      "familyId": "FAM-0010",
+      "familyName": "NARAYAN PRASAD RAJAK Family",
+      "primaryMobile": "9827105809",
+      "primaryAddress": "S/O SRI GOPAL PRASAD RAJAK D-42 SAOBHAGYA NAGAR SUBHASH COLONY, BHOPAL, M.P.",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "NARAYAN PRASAD RAJAK"
+      ],
+      "policyNumbers": [
+        "354569550",
+        "354569548"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 110000,
+      "totalPremium": 3630
+    },
+    {
+      "familyId": "FAM-0011",
+      "familyName": "AJEET KUMAR SINGH Family",
+      "primaryMobile": "9826102664",
+      "primaryAddress": "Bhopal, Madhya Pradesh",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "AJEET KUMAR SINGH"
+      ],
+      "policyNumbers": [
+        "354570583",
+        "354792575"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 163000,
+      "totalPremium": 693
+    },
+    {
+      "familyId": "FAM-0012",
+      "familyName": "RAMESH DHOKE Family",
+      "primaryMobile": "8120609071",
+      "primaryAddress": "H.NO.19- J.P. COLONY NEAR SANT PAUL SCHOOL ANNAND NAGAR BHOPAL MP",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "RAMESH DHOKE",
+        "SULOCHANA DHOKE"
+      ],
+      "policyNumbers": [
+        "354571852",
+        "354781826",
+        "354781824"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 175000,
+      "totalPremium": 2398
+    },
+    {
+      "familyId": "FAM-0013",
+      "familyName": "SANTOSH SAHU Family",
+      "primaryMobile": "9630418946",
+      "primaryAddress": "1571, LALTANKI BAAGSEWANIYA GRAM AHAMADAPUR BHOPAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SANTOSH SAHU",
+        "SARITA SAHU"
+      ],
+      "policyNumbers": [
+        "354571844",
+        "354571861"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 100000,
+      "totalPremium": 2508
+    },
+    {
+      "familyId": "FAM-0014",
+      "familyName": "DINESH KUMAR KAITHAL Family",
+      "primaryMobile": "9993174709",
+      "primaryAddress": "H.NO. 29, NARENDRA NAGAR BARKHEDA PATHANI, BHOPAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "DINESH KUMAR KAITHAL",
+        "SARITA KAITHAL"
+      ],
+      "policyNumbers": [
+        "354571856",
+        "354783259"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 162500,
+      "totalPremium": 2701
+    },
+    {
+      "familyId": "FAM-0015",
+      "familyName": "SHWETA SINGH Family",
+      "primaryMobile": "9179496481",
+      "primaryAddress": "W/O GAURAV SINGH LIG II/106, BAGMUGALIYA EXTN. H B COLONY, BHOPAL, M.P.",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "SHWETA SINGH"
+      ],
+      "policyNumbers": [
+        "354571858",
+        "354791360",
+        "205234273"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 250000,
+      "totalPremium": 7685
+    },
+    {
+      "familyId": "FAM-0016",
+      "familyName": "NEHA AMULAYA.RATNA SINGH Family",
+      "primaryMobile": "7774941127",
+      "primaryAddress": "LIG-II-106 BAGMUGALIYA EXTENTION BHOPAL MP",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "NEHA AMULAYA.RATNA SINGH",
+        "SUNITA SINGH",
+        "SHUBHAM AMULYARATNA SINGH",
+        "SHUBHAM AMULAYA.RATNA SINGH"
+      ],
+      "policyNumbers": [
+        "354571693",
+        "354791370",
+        "205103682",
+        "205103681",
+        "391511099"
+      ],
+      "totalPolicies": 5,
+      "totalSumAssured": 850000,
+      "totalPremium": 32097
+    },
+    {
+      "familyId": "FAM-0017",
+      "familyName": "VIRENDRA SINGH RAJPUT Family",
+      "primaryMobile": "9589106623",
+      "primaryAddress": "60-D- PART 2, BAG DILKUSHA BHAG BHOPAL M.P.",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "VIRENDRA SINGH RAJPUT"
+      ],
+      "policyNumbers": [
+        "354573468",
+        "354571863",
+        "354773458"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 410000,
+      "totalPremium": 13908
+    },
+    {
+      "familyId": "FAM-0018",
+      "familyName": "VISHAL SINGH S/O SRI VINDHYACHAL SINGH Family",
+      "primaryMobile": "9827364379",
+      "primaryAddress": "S/O VINDHYACHAL SINGH LIG 2/106 HOUSING BOARD COLONY BAGMUGALIYA EXTENSION LAHARPUR BHO",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "VISHAL SINGH S/O SRI VINDHYACHAL SINGH",
+        "PRAVEEN KUMAR",
+        "VISHAL SINGH",
+        "RITA SINGH",
+        "VISHAL SINGH(LA)"
+      ],
+      "policyNumbers": [
+        "354571853",
+        "354574831",
+        "354783254",
+        "354791372",
+        "354791371",
+        "205103677",
+        "205103679",
+        "205103674",
+        "385690140"
+      ],
+      "totalPolicies": 9,
+      "totalSumAssured": 900000,
+      "totalPremium": 14105
+    },
+    {
+      "familyId": "FAM-0019",
+      "familyName": "UMASHANKAR LODHI Family",
+      "primaryMobile": "9826100444",
+      "primaryAddress": "1892 DHAMKHEDA, INDUSTRIAL AREA GOVINDPURA BHOPAL MP",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "UMASHANKAR LODHI"
+      ],
+      "policyNumbers": [
+        "354572582",
+        "205057158"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 200000,
+      "totalPremium": 2276
+    },
+    {
+      "familyId": "FAM-0020",
+      "familyName": "ANKITA SINGH Family",
+      "primaryMobile": "9993035408",
+      "primaryAddress": "H.No. 71 Kailash Nagar Semra Kalan Phase - 5 Bhopal M.P. 462040",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "ANKITA SINGH",
+        "ANITA SINGH",
+        "KRISHNA SINGH"
+      ],
+      "policyNumbers": [
+        "354574817",
+        "301445631",
+        "205057277",
+        "375656953",
+        "375657638",
+        "375657636"
+      ],
+      "totalPolicies": 6,
+      "totalSumAssured": 432500,
+      "totalPremium": 118528
+    },
+    {
+      "familyId": "FAM-0021",
+      "familyName": "BABITA PARMAR Family",
+      "primaryMobile": "9993945860",
+      "primaryAddress": "H.No. 37 Laharpura Bagmugalia Bhopal M.P. 462043",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "BABITA PARMAR",
+        "LAKHAN SINGH PARMAR"
+      ],
+      "policyNumbers": [
+        "354574818",
+        "354574813"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 300000,
+      "totalPremium": 60000
+    },
+    {
+      "familyId": "FAM-0022",
+      "familyName": "KHUSBOO SHARMA Family",
+      "primaryMobile": "9993952602",
+      "primaryAddress": "H.No. 87 Aamrai Parisar Bag Sewaniya Bhopal M.P. 462011",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "KHUSBOO SHARMA",
+        "ROSHNI SHARMA",
+        "PARMATMA SHARMA"
+      ],
+      "policyNumbers": [
+        "354574575",
+        "362735159",
+        "362735213"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 262500,
+      "totalPremium": 4069
+    },
+    {
+      "familyId": "FAM-0023",
+      "familyName": "VINDHYACHAL SINGH Family",
+      "primaryMobile": "9406935622",
+      "primaryAddress": "Lig - Ii - 106 - Bagmugalia Ext . Laharpur Bhopal M.P. 462043",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "VINDHYACHAL SINGH"
+      ],
+      "policyNumbers": [
+        "354574819",
+        "354791373"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 112500,
+      "totalPremium": 2746
+    },
+    {
+      "familyId": "FAM-0024",
+      "familyName": "KRISHNA BIHARI MISHRA Family",
+      "primaryMobile": "9039953128",
+      "primaryAddress": "S/O SRI SHIV SHARAN MISHRA SHADE NO 235, GAUTAM NAGAR PRESS COMPLEX, BHOPAL 462023",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "KRISHNA BIHARI MISHRA"
+      ],
+      "policyNumbers": [
+        "354765214",
+        "354765215"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 200000,
+      "totalPremium": 985
+    },
+    {
+      "familyId": "FAM-0025",
+      "familyName": "HEMANT KUMAR ARYA Family",
+      "primaryMobile": "9753608760",
+      "primaryAddress": "H.No. 88 Ravidas Nagar Near Bharat Nagar Bhel Bh0pal M.P. 462022",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "HEMANT KUMAR ARYA"
+      ],
+      "policyNumbers": [
+        "354767276",
+        "354783258"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 112500,
+      "totalPremium": 536
+    },
+    {
+      "familyId": "FAM-0026",
+      "familyName": "SARITA VATS Family",
+      "primaryMobile": "7697271009",
+      "primaryAddress": "806 Lig-G- Sector H-B Colony Ayodhya Nagar Bhopal Mp 462000",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SARITA VATS",
+        "HITESH VATS"
+      ],
+      "policyNumbers": [
+        "354767525",
+        "354781825"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 562500,
+      "totalPremium": 2434
+    },
+    {
+      "familyId": "FAM-0027",
+      "familyName": "RAMAKANT DAS Family",
+      "primaryMobile": "9827108029",
+      "primaryAddress": "H.NO. 19, JP COLONY ANAND  NAGAR  BHOPAL M.P.",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "RAMAKANT DAS"
+      ],
+      "policyNumbers": [
+        "354768090",
+        "354768089"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 200000,
+      "totalPremium": 1108
+    },
+    {
+      "familyId": "FAM-0028",
+      "familyName": "DEEP NARAYAN VISHWAKARMA Family",
+      "primaryMobile": "8602301217",
+      "primaryAddress": "FLAT NO-S-4,SECOND FLOOR ASHUTOSH PARISAR SHIVLOK PHASE-II, BHOPAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "DEEP NARAYAN VISHWAKARMA",
+        "LALITA VISHWAKARMA"
+      ],
+      "policyNumbers": [
+        "354773398",
+        "391532424"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 225000,
+      "totalPremium": 13200
+    },
+    {
+      "familyId": "FAM-0029",
+      "familyName": "VINITA VISHWAKARMA Family",
+      "primaryMobile": "7000100629",
+      "primaryAddress": "97-H- SECTOR EWS AYODHYA NAGAR BY PASS ROAD BHOPAL   M.P.",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "VINITA VISHWAKARMA"
+      ],
+      "policyNumbers": [
+        "354772494",
+        "205057602"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 200000,
+      "totalPremium": 1679
+    },
+    {
+      "familyId": "FAM-0030",
+      "familyName": "VISHAL SINGH Family",
+      "primaryMobile": "8871328039",
+      "primaryAddress": "S/O Sri Vindhyachal Singh L.P. Lig - Ii / 106, Bagmugalia Ext. Laharpur Bhopal M.P. 462001",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "VISHAL SINGH"
+      ],
+      "policyNumbers": [
+        "354773452",
+        "205189619",
+        "389415916"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 725000,
+      "totalPremium": 19803
+    },
+    {
+      "familyId": "FAM-0031",
+      "familyName": "SATYENDRA SINGH Family",
+      "primaryMobile": "7747819973",
+      "primaryAddress": "H.No.201 Samanavya Nagar Awadhpuri Bhel Bh0pal M.P 462022",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SATYENDRA SINGH",
+        "SEEMA SINGH"
+      ],
+      "policyNumbers": [
+        "354776333",
+        "354776334"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 125000,
+      "totalPremium": 519
+    },
+    {
+      "familyId": "FAM-0032",
+      "familyName": "VINOD KUMAR SONI Family",
+      "primaryMobile": "9827359829",
+      "primaryAddress": "M-104 -B TYPE BHIMSEN JOSHI PARISAR 2-C SAKET NAGAR",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "VINOD KUMAR SONI",
+        "SARITA SONI"
+      ],
+      "policyNumbers": [
+        "354779335",
+        "354779333"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 250000,
+      "totalPremium": 6064
+    },
+    {
+      "familyId": "FAM-0033",
+      "familyName": "PRASHANT HIRWANI Family",
+      "primaryMobile": "9826096684",
+      "primaryAddress": "584 - VIKAS NAGAR GOVINDPURA BHEL BHOPAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "PRASHANT HIRWANI",
+        "VANDANA HIRWANI"
+      ],
+      "policyNumbers": [
+        "354790314",
+        "354790313"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 150000,
+      "totalPremium": 4492
+    },
+    {
+      "familyId": "FAM-0034",
+      "familyName": "SUNITA AMULYA.RATNA SINGH Family",
+      "primaryMobile": "9552239878",
+      "primaryAddress": "FLAT NO-A/7-3,SECTOR-1, HINDUSTAN SAMUHA AWAS NAKSHATRAWADI",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SUNITA AMULYA.RATNA SINGH",
+        "NEHA AMULYARATNA SINGH",
+        "SUNITA SINGH AMULYA",
+        "REYANSH SINGH"
+      ],
+      "policyNumbers": [
+        "354790553",
+        "205103673",
+        "362548717",
+        "383661212"
+      ],
+      "totalPolicies": 4,
+      "totalSumAssured": 837500,
+      "totalPremium": 15784
+    },
+    {
+      "familyId": "FAM-0035",
+      "familyName": "BABITA SINGH Family",
+      "primaryMobile": "9893429391",
+      "primaryAddress": "A-21, RAMESHWARAM COLONY ARVIND VIHAR",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "BABITA SINGH",
+        "AMIT SINGH"
+      ],
+      "policyNumbers": [
+        "354791043",
+        "368249229",
+        "371681100"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 2000000,
+      "totalPremium": 12311
+    },
+    {
+      "familyId": "FAM-0036",
+      "familyName": "SWAPNIL DAS Family",
+      "primaryMobile": "9893067385",
+      "primaryAddress": "W/O MANOJ KUMAR DAS H.NO. 43 - BASANT KUNJ AYODHYA BY PASS",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SWAPNIL DAS",
+        "SHREYANK DAS",
+        "BIDYUT PRAVA DAS",
+        "MANOJ KUMAR DAS"
+      ],
+      "policyNumbers": [
+        "354792820",
+        "354792621",
+        "354792622",
+        "389417382",
+        "389417381"
+      ],
+      "totalPolicies": 5,
+      "totalSumAssured": 1050000,
+      "totalPremium": 53890
+    },
+    {
+      "familyId": "FAM-0037",
+      "familyName": "AMOKSH PANDEY Family",
+      "primaryMobile": "9993614487",
+      "primaryAddress": "H.NO.445 VAISHNAV SURENDRA PLACE HOSHANGABAD ROAD BHOPAL MP",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "AMOKSH PANDEY",
+        "POOJA RAWAT",
+        "NARENDRA PANDEY",
+        "RATNA PANDEY",
+        "ASHISH KUMAR DWIVEDI"
+      ],
+      "policyNumbers": [
+        "354792583",
+        "354792582",
+        "205075105",
+        "205223481",
+        "205248787"
+      ],
+      "totalPolicies": 5,
+      "totalSumAssured": 1850000,
+      "totalPremium": 72756
+    },
+    {
+      "familyId": "FAM-0038",
+      "familyName": "SHAILENDRA KUMAR SINGH Family",
+      "primaryMobile": "9039776864",
+      "primaryAddress": "A-21 RAMESHWARAM COLONY BAGMUGALIYA ARVIND VILAR BHOPAL MP",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SHAILENDRA KUMAR SINGH",
+        "PUNITA SINGH"
+      ],
+      "policyNumbers": [
+        "354792580",
+        "354792579",
+        "205104068"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 1125000,
+      "totalPremium": 8622
+    },
+    {
+      "familyId": "FAM-0039",
+      "familyName": "BHIKAM SINGH RAJPUT Family",
+      "primaryMobile": "7389329320",
+      "primaryAddress": "H.NO. A4 BAGH DILKUSHA RAISEN ROAD",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "BHIKAM SINGH RAJPUT",
+        "KRISHNA BAI"
+      ],
+      "policyNumbers": [
+        "354793643",
+        "354793648"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 125000,
+      "totalPremium": 3079
+    },
+    {
+      "familyId": "FAM-0040",
+      "familyName": "JITENDRA GOSWAMI Family",
+      "primaryMobile": "8319219542",
+      "primaryAddress": "H.No. 310 Bagmugaliya Basti Near Water Tank Bhopal null 462001",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "JITENDRA GOSWAMI",
+        "RANI GOSWAMI",
+        "ANANYA GOSWAMI",
+        "DADAN GOSWAMI"
+      ],
+      "policyNumbers": [
+        "354796767",
+        "383661743",
+        "383661744",
+        "388505651"
+      ],
+      "totalPolicies": 4,
+      "totalSumAssured": 482500,
+      "totalPremium": 6622
+    },
+    {
+      "familyId": "FAM-0041",
+      "familyName": "RINKU GIRI Family",
+      "primaryMobile": "9630111026",
+      "primaryAddress": "283 BAGMUGALIYA NAYI BASTI BHOPAL MP",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "RINKU GIRI",
+        "RANJU GIRI"
+      ],
+      "policyNumbers": [
+        "354796774",
+        "354798312"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 125000,
+      "totalPremium": 1569
+    },
+    {
+      "familyId": "FAM-0042",
+      "familyName": "SITARAM PANDEY Family",
+      "primaryMobile": "9755110989",
+      "primaryAddress": "H.NO.121 ACHARYA NARENDRA DEV NAGAR NEAR HANUMAN MADIR GOVINDPURA BHOPAL MP",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SITARAM PANDEY",
+        "SHEELA PANDEY"
+      ],
+      "policyNumbers": [
+        "354796776",
+        "354796771"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 250000,
+      "totalPremium": 3109
+    },
+    {
+      "familyId": "FAM-0043",
+      "familyName": "USHA SINGH Family",
+      "primaryMobile": "9806280236",
+      "primaryAddress": "H.NO. 81, TAGDRE NAGAR PHASE - I KHAJURI KALA ROAD PIPLANI BHOPAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "USHA SINGH",
+        "BARMESHWAR SINGH",
+        "RAHUL KUMAR SINGH"
+      ],
+      "policyNumbers": [
+        "301440545",
+        "354798316",
+        "205057601"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 212500,
+      "totalPremium": 8699
+    },
+    {
+      "familyId": "FAM-0044",
+      "familyName": "USHA DUBEY Family",
+      "primaryMobile": "9165802240",
+      "primaryAddress": "H.No. 648 Diksha Nagar Nai Basti Bagmugaliya Bhopal M.P. 462043",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "USHA DUBEY",
+        "BHAGYA NARAYAN DUBEY"
+      ],
+      "policyNumbers": [
+        "354797985",
+        "354798315"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 125000,
+      "totalPremium": 1578
+    },
+    {
+      "familyId": "FAM-0045",
+      "familyName": "SUMAN PANSE Family",
+      "primaryMobile": "9826111100",
+      "primaryAddress": "H.NO. 17 - B JP COLONY ANAND NAGAR BHOPAL MP",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SUMAN PANSE",
+        "SHANKAR PANSE"
+      ],
+      "policyNumbers": [
+        "354797979",
+        "354799892"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 250000,
+      "totalPremium": 6158
+    },
+    {
+      "familyId": "FAM-0046",
+      "familyName": "ANITA DHOTE Family",
+      "primaryMobile": "9893097266",
+      "primaryAddress": "MIG - 65 RAMESHWARAM COLONY BAGHMUGALIYA BHOPAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "ANITA DHOTE",
+        "SUNIL DHOTE"
+      ],
+      "policyNumbers": [
+        "301442449",
+        "301442452"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 125000,
+      "totalPremium": 510
+    },
+    {
+      "familyId": "FAM-0047",
+      "familyName": "MOHAN LAL VERMA Family",
+      "primaryMobile": "9993104292",
+      "primaryAddress": "H.NO. 2 PURUSHOTAM NAGAR PHASE - ISEMRA KALA WARD NO. 36 BHOPAL M.P.",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "MOHAN LAL VERMA"
+      ],
+      "policyNumbers": [
+        "301442457",
+        "301442456"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 150000,
+      "totalPremium": 1710
+    },
+    {
+      "familyId": "FAM-0048",
+      "familyName": "ANMOLA SINGH Family",
+      "primaryMobile": "9755100333",
+      "primaryAddress": "WARD NO. 9 BIHARI COLONY ANUPPUR M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "ANMOLA SINGH",
+        "ANURAG SINGH",
+        "AKANKSHA SINGH",
+        "ABHINAV SINGH"
+      ],
+      "policyNumbers": [
+        "205057006",
+        "205057159",
+        "371868960",
+        "381981974"
+      ],
+      "totalPolicies": 4,
+      "totalSumAssured": 950000,
+      "totalPremium": 7038
+    },
+    {
+      "familyId": "FAM-0049",
+      "familyName": "CHIRAG PAL Family",
+      "primaryMobile": "9993452007",
+      "primaryAddress": "20-B ASHOKA GARDEN 80 FIT ROAD SHANKAR  GARGEN BHOPAL",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "CHIRAG PAL",
+        "SHER SINGH PAL",
+        "NEELAM PAL"
+      ],
+      "policyNumbers": [
+        "205056995",
+        "381981976",
+        "388504534"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 400000,
+      "totalPremium": 8675
+    },
+    {
+      "familyId": "FAM-0050",
+      "familyName": "JAYANT KUMAR SINGH Family",
+      "primaryMobile": "7869231360",
+      "primaryAddress": "D/O MRITUNJAY SINGH H.NO-1 NAVEEN SWAMY VIVEKANANDA",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "JAYANT KUMAR SINGH",
+        "JAGRATI SINGH",
+        "SANJU SINGH",
+        "JAYANT SINGH"
+      ],
+      "policyNumbers": [
+        "205057161",
+        "205057160",
+        "205091391",
+        "205091392",
+        "205091717",
+        "362548714",
+        "371612591",
+        "371612592",
+        "375926719",
+        "385690431",
+        "389417857"
+      ],
+      "totalPolicies": 11,
+      "totalSumAssured": 820000,
+      "totalPremium": 411083
+    },
+    {
+      "familyId": "FAM-0051",
+      "familyName": "AJAY GANGAVANE Family",
+      "primaryMobile": "9179100999",
+      "primaryAddress": "H.NO. - 80 - NEW BASTI BAGMUGALIYA NEAR NOVAL SCHOOL BHOPAL MP",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "AJAY GANGAVANE",
+        "ADITYA GANGAVANE"
+      ],
+      "policyNumbers": [
+        "205062165",
+        "205062112"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 200000,
+      "totalPremium": 2475
+    },
+    {
+      "familyId": "FAM-0052",
+      "familyName": "LALITA VERMA Family",
+      "primaryMobile": "9770555758",
+      "primaryAddress": "Lig - 356 - 357 Bagmugalia Ext. Laharpur Bhopal M.P. 462043",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "LALITA VERMA",
+        "CHANDRA PRAKASH VERMA"
+      ],
+      "policyNumbers": [
+        "205062777",
+        "205062497",
+        "205062164",
+        "205062433"
+      ],
+      "totalPolicies": 4,
+      "totalSumAssured": 1600000,
+      "totalPremium": 19010
+    },
+    {
+      "familyId": "FAM-0053",
+      "familyName": "TARUN KUMAR SINGH Family",
+      "primaryMobile": "7988855874",
+      "primaryAddress": "Lig-Ii-106 Bagmugaliya Ext. Laharpur Bhopal Mp null 462043",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "TARUN KUMAR SINGH",
+        "SANJAY SINGH"
+      ],
+      "policyNumbers": [
+        "205062331",
+        "205084060"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 175000,
+      "totalPremium": 10321
+    },
+    {
+      "familyId": "FAM-0054",
+      "familyName": "SOMESH BAGUL Family",
+      "primaryMobile": "9713081530",
+      "primaryAddress": "H.NO-262,NEAR AMBEDKAR MAIDAN NEW BASTI BAGMUGALIYA",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "SOMESH BAGUL"
+      ],
+      "policyNumbers": [
+        "205062110",
+        "362708871"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 200000,
+      "totalPremium": 5446
+    },
+    {
+      "familyId": "FAM-0055",
+      "familyName": "MUKESH RAJPUT Family",
+      "primaryMobile": "9752017728",
+      "primaryAddress": "H.No. 40 Arjun Nagar Shankari Narela Shankari Bhopal M.P. 462021",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "MUKESH RAJPUT"
+      ],
+      "policyNumbers": [
+        "205074405",
+        "205198991"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 380000,
+      "totalPremium": 4475
+    },
+    {
+      "familyId": "FAM-0056",
+      "familyName": "DEEPAK SONI Family",
+      "primaryMobile": "8349705776",
+      "primaryAddress": "168 INDRAPURI JHUGGI AREA NARELA SHANKARI BHOPAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "DEEPAK SONI",
+        "KOMAL SONI"
+      ],
+      "policyNumbers": [
+        "205075579",
+        "205075578"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 300000,
+      "totalPremium": 7695
+    },
+    {
+      "familyId": "FAM-0057",
+      "familyName": "SEEMA PATEL Family",
+      "primaryMobile": "7415674198",
+      "primaryAddress": "3-Piparvar House 1 To 215 Village-Piparavar Teh-Mangawan Dist-Rewa M.P. 486111",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SEEMA PATEL",
+        "KRIPA SHANKAR PATEL"
+      ],
+      "policyNumbers": [
+        "205075583",
+        "205075580"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 300000,
+      "totalPremium": 8395
+    },
+    {
+      "familyId": "FAM-0058",
+      "familyName": "SHRADDHA JANGAM Family",
+      "primaryMobile": "9981025287",
+      "primaryAddress": "26, GEET BUNGLOW PH-5, AYODHYA BY PASS NARELA SHANKARI BHOPAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SHRADDHA JANGAM",
+        "PALLAVI JANGAM"
+      ],
+      "policyNumbers": [
+        "205095630",
+        "205095624"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 200000,
+      "totalPremium": 10703
+    },
+    {
+      "familyId": "FAM-0059",
+      "familyName": "ARVIND Family",
+      "primaryMobile": "8103524303",
+      "primaryAddress": "35 PIPALIYA GAJJU MANDIDEEP DIST-RAISEN MP",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "ARVIND",
+        "ARVIND S/O SHRI RAMGOPAL"
+      ],
+      "policyNumbers": [
+        "205152283",
+        "351211706"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 310000,
+      "totalPremium": 6139
+    },
+    {
+      "familyId": "FAM-0060",
+      "familyName": "SAVITA SINGH Family",
+      "primaryMobile": "9827293413",
+      "primaryAddress": "S/O SRI SAVITA SINGH (L.P.) A - 21 RAMESHWARAM COLONY",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SAVITA SINGH",
+        "MANAN SINGH"
+      ],
+      "policyNumbers": [
+        "205294569",
+        "205294049",
+        "367410845"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 650000,
+      "totalPremium": 15417
+    },
+    {
+      "familyId": "FAM-0061",
+      "familyName": "PRATYUSHA KUMBHARE Family",
+      "primaryMobile": "9907282374",
+      "primaryAddress": "H.NO.112, 2C SAKET NAGAR H.E HOSPITAL HUJUR BHOPAL MP",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "PRATYUSHA KUMBHARE",
+        "NEETA GHODKI"
+      ],
+      "policyNumbers": [
+        "205355213",
+        "368249715",
+        "383661467"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 405000,
+      "totalPremium": 6851
+    },
+    {
+      "familyId": "FAM-0062",
+      "familyName": "MAHESH KUMAR AHIRWAR Family",
+      "primaryMobile": "7489825876",
+      "primaryAddress": "52 MAHAMAI KA BAGH WARD NO. 37 HUZUR DISTRICT - BHOPAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "MAHESH KUMAR AHIRWAR",
+        "CHIRAG AHIRWAR",
+        "PRIYANK AHIRWAR"
+      ],
+      "policyNumbers": [
+        "362548719",
+        "368249721",
+        "368249720"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 275000,
+      "totalPremium": 3518
+    },
+    {
+      "familyId": "FAM-0063",
+      "familyName": "PRAGATI SINGH Family",
+      "primaryMobile": "9826830394",
+      "primaryAddress": "D/O SRI DEEPAK KUMAR SINGH (L.P.) LIG - 2 - 123 HOUSING BOARD COLONY BAGHMUGALIYA EXTENSION BHOPAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "PRAGATI SINGH",
+        "DEEPAK KUMAR SINGH",
+        "VANSHIKA SINGH"
+      ],
+      "policyNumbers": [
+        "362563282",
+        "362563281",
+        "365110465"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 475000,
+      "totalPremium": 23869
+    },
+    {
+      "familyId": "FAM-0064",
+      "familyName": "SATYANARAYAN RAJPUT Family",
+      "primaryMobile": "9893036751",
+      "primaryAddress": "D/O SH.SATYANARAYAN RAJPUT (L.P.) 240/4,NANDANER GRAM-NANDANER TEH-BUDHNI DIST-SEHORE M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SATYANARAYAN RAJPUT",
+        "RAJNANDANI SINGH RAJPUT"
+      ],
+      "policyNumbers": [
+        "362708867",
+        "366981904"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 550000,
+      "totalPremium": 7207
+    },
+    {
+      "familyId": "FAM-0065",
+      "familyName": "SHRUTI SWAMY Family",
+      "primaryMobile": "8827869228",
+      "primaryAddress": "H.N.-55-A,GOPAL NAGAR, NEW WATER TANK , B SECTOR,",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SHRUTI SWAMY",
+        "SHARAD SWAMY"
+      ],
+      "policyNumbers": [
+        "362709716",
+        "362709722",
+        "371869605"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 210000,
+      "totalPremium": 30631
+    },
+    {
+      "familyId": "FAM-0066",
+      "familyName": "GAYTRI MISHRA Family",
+      "primaryMobile": "9907297665",
+      "primaryAddress": "LIG-II/105,BAGMUGALIYA EXTN., LAHARPUR, BHOPAL,MP",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "GAYTRI MISHRA",
+        "VINAY MISHRA"
+      ],
+      "policyNumbers": [
+        "362709718",
+        "367872462"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 225000,
+      "totalPremium": 3215
+    },
+    {
+      "familyId": "FAM-0067",
+      "familyName": "RAIS ALI Family",
+      "primaryMobile": "6260899291",
+      "primaryAddress": "S/O SRI RAIS ALI 99,KUMHAR MOHALLA, PURANI BASTI BAGH MUGALIYA EXTENSIONBHOPAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "RAIS ALI",
+        "SAID ALI"
+      ],
+      "policyNumbers": [
+        "365127842",
+        "389394384"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 200000,
+      "totalPremium": 3512
+    },
+    {
+      "familyId": "FAM-0068",
+      "familyName": "RITESH SHARMA Family",
+      "primaryMobile": "9827364227",
+      "primaryAddress": "S/O SAWALIYA SHARMA L I G 1/144, BAGMUGALIYA EXTENTION",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "RITESH SHARMA",
+        "SONA DEVI"
+      ],
+      "policyNumbers": [
+        "368267270",
+        "368593279"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 300000,
+      "totalPremium": 9196
+    },
+    {
+      "familyId": "FAM-0069",
+      "familyName": "SUMITRA DEVI Family",
+      "primaryMobile": "9827098179",
+      "primaryAddress": "MIG-8,SUNDAR NAGAR HALALPUR BHOPAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SUMITRA DEVI",
+        "SANJAY SINGH"
+      ],
+      "policyNumbers": [
+        "369247424",
+        "369247328"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 700000,
+      "totalPremium": 29827
+    },
+    {
+      "familyId": "FAM-0070",
+      "familyName": "PUUSHOTTAM Family",
+      "primaryMobile": "8085859372",
+      "primaryAddress": "57,VISHWAKARMA NAGAR, BAGMUGALIYA,PANI KI TANKI KE PASS,",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "PUUSHOTTAM",
+        "KRISHNA GIRI"
+      ],
+      "policyNumbers": [
+        "369568571",
+        "385690012"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 200000,
+      "totalPremium": 5452
+    },
+    {
+      "familyId": "FAM-0071",
+      "familyName": "SARITA VISHWAKARMA Family",
+      "primaryMobile": "9981816952",
+      "primaryAddress": "S/O SMT.SARITA VISHWAKARMA (L.P.) H.NO-62,RAJIV NAGAR SEMRA KALAN BHOPAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SARITA VISHWAKARMA",
+        "SUDHIR VISHWAKARMA",
+        "RAJ VISHWAKARMA",
+        "TANU VISHWAKARMA",
+        "VISHAL VISHWAKARMA"
+      ],
+      "policyNumbers": [
+        "369568568",
+        "369568573",
+        "369568570",
+        "369568567",
+        "369568569"
+      ],
+      "totalPolicies": 5,
+      "totalSumAssured": 600000,
+      "totalPremium": 9545
+    },
+    {
+      "familyId": "FAM-0072",
+      "familyName": "LAL MOHAMMAD Family",
+      "primaryMobile": "9407238895",
+      "primaryAddress": "S/O LT. MOHAMMED DEEN H N 198, ADARSH NAGAR DURGA MANDIR, GOVINDPURA BHOPAL M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "LAL MOHAMMAD",
+        "SAIDA BEGUM"
+      ],
+      "policyNumbers": [
+        "369586800",
+        "369586799"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 200000,
+      "totalPremium": 3092
+    },
+    {
+      "familyId": "FAM-0073",
+      "familyName": "SANJU SINGH Family",
+      "primaryMobile": "6232723913",
+      "primaryAddress": "W/O LT. MRITUJAY SINGH H N 01, NAVEEN SWAMY VIVEKANAND KHAJURI KALAN BHOPAL, M.P.",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "SANJU SINGH"
+      ],
+      "policyNumbers": [
+        "369586544",
+        "397781341",
+        "397885076"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 475000,
+      "totalPremium": 76096
+    },
+    {
+      "familyId": "FAM-0074",
+      "familyName": "SHAURYA PRATAP SINGH Family",
+      "primaryMobile": "9826999887",
+      "primaryAddress": "S/O SRI KIRTI SINGH GAHLOT (L.P.) 2/26/4, JUNA RISHALA GALI NO. 4 INDORE CITY - 2 INDORE M. P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SHAURYA PRATAP SINGH",
+        "BANSURI SINGH GEHLOT"
+      ],
+      "policyNumbers": [
+        "369587838",
+        "375656878"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 1000000,
+      "totalPremium": 12526
+    },
+    {
+      "familyId": "FAM-0075",
+      "familyName": "ANAY PARVAT Family",
+      "primaryMobile": "9522458496",
+      "primaryAddress": "H.NO.-203,SAI BABA NAGAR, ARERA COLONY, BHOPAL,MP",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "ANAY PARVAT",
+        "AARTI GIRI"
+      ],
+      "policyNumbers": [
+        "369760374",
+        "369760283"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 300000,
+      "totalPremium": 4741
+    },
+    {
+      "familyId": "FAM-0076",
+      "familyName": "SHIVANI KUMARI Family",
+      "primaryMobile": "8817997612",
+      "primaryAddress": "H.NO.-576,OPP. VISHWAKARMA NAGAR BAGSEWANIYA",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SHIVANI KUMARI",
+        "GANESH KUMAR PANDIT",
+        "SUGANTI DEVI"
+      ],
+      "policyNumbers": [
+        "369760323",
+        "369760307",
+        "369760282"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 300000,
+      "totalPremium": 9807
+    },
+    {
+      "familyId": "FAM-0077",
+      "familyName": "AMIT KUMAR SINGH Family",
+      "primaryMobile": "7566035830",
+      "primaryAddress": "H.NO-13 KAILASH NAGAR,CHANDBAD SEMRA KALAN,BHOPAL,MP",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "AMIT KUMAR SINGH",
+        "VEJANTI DEVI",
+        "FAGU LAL SINGH"
+      ],
+      "policyNumbers": [
+        "371612842",
+        "371613300",
+        "371612841"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 400000,
+      "totalPremium": 5911
+    },
+    {
+      "familyId": "FAM-0078",
+      "familyName": "KIRTI GOYAL Family",
+      "primaryMobile": "9399060050",
+      "primaryAddress": "W/O SAMMAT GOYAL GRAM-JHAL POST-GADAMORE TEH-NAWAGARH BEMETARA GADAMORE CHHATTISGARH",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "KIRTI GOYAL",
+        "SAMMAT GOYAL"
+      ],
+      "policyNumbers": [
+        "375657516",
+        "375657836"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 200000,
+      "totalPremium": 3462
+    },
+    {
+      "familyId": "FAM-0079",
+      "familyName": "RAMKUNVAR YADAV Family",
+      "primaryMobile": "7999465695",
+      "primaryAddress": "16 SCHOOL CHOUK KARIPAT BALODA BAZAR CHHATTISGARH",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "RAMKUNVAR YADAV",
+        "PRADEEP KUMAR YADAV",
+        "MALIKRAM YADAV"
+      ],
+      "policyNumbers": [
+        "375657632",
+        "375657633",
+        "375657634"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 300000,
+      "totalPremium": 5128
+    },
+    {
+      "familyId": "FAM-0080",
+      "familyName": "ATHARV SAHU Family",
+      "primaryMobile": "9993713439",
+      "primaryAddress": "LIG-64 2B SAKET NAGAR",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "ATHARV SAHU",
+        "YOGESH SAHU"
+      ],
+      "policyNumbers": [
+        "375925376",
+        "389693973"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 650000,
+      "totalPremium": 16180
+    },
+    {
+      "familyId": "FAM-0081",
+      "familyName": "TRISHAAN SINGH Family",
+      "primaryMobile": "7987907989",
+      "primaryAddress": "S/O LT. RAMDEV SINGH SR. MIG-3/1 ANUJA VILLAGE HOSHANGABAD ROAD BHOPAL",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "TRISHAAN SINGH",
+        "BHUPENDRA SINGH"
+      ],
+      "policyNumbers": [
+        "381981822",
+        "392454828"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 750000,
+      "totalPremium": 11111
+    },
+    {
+      "familyId": "FAM-0082",
+      "familyName": "PREM DHOKE Family",
+      "primaryMobile": "9926722616",
+      "primaryAddress": "S/O RAMESH DHOKE H NO 19 J P COLONY NEAR ST PAUL SCHOOL ANAND NAGAR BHOPAL M.P",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "PREM DHOKE",
+        "AMIT DHOKE",
+        "SULOCHANA DHOKE"
+      ],
+      "policyNumbers": [
+        "383661207",
+        "383661745",
+        "385690141"
+      ],
+      "totalPolicies": 3,
+      "totalSumAssured": 350000,
+      "totalPremium": 8941
+    },
+    {
+      "familyId": "FAM-0083",
+      "familyName": "ARVIND YATI Family",
+      "primaryMobile": "7441123935",
+      "primaryAddress": "S/O RAMASHRAY YATI H N 336,16 EKAD BAGMUGALIYA, BHOPAL, M.P.",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "ARVIND YATI",
+        "MISTI YATI"
+      ],
+      "policyNumbers": [
+        "385690011",
+        "385690010"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 220000,
+      "totalPremium": 4167
+    },
+    {
+      "familyId": "FAM-0084",
+      "familyName": "SACHIN DILIP SHELKE Family",
+      "primaryMobile": "9131794161",
+      "primaryAddress": "S/O DILIP KUMAR HOUSE NO-201 D-3 EWS SWAMI VIVEKANAND PARISAR HOUSING BOARD COLONY KATAR",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "SACHIN DILIP SHELKE"
+      ],
+      "policyNumbers": [
+        "388504913",
+        "388504912"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 300000,
+      "totalPremium": 4713
+    },
+    {
+      "familyId": "FAM-0085",
+      "familyName": "RITIKRAJ SINGH Family",
+      "primaryMobile": "9425116502",
+      "primaryAddress": "Bhopal, Madhya Pradesh",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "RITIKRAJ SINGH"
+      ],
+      "policyNumbers": [
+        "388505207",
+        "388505206"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 700000,
+      "totalPremium": 3211
+    },
+    {
+      "familyId": "FAM-0086",
+      "familyName": "SUNITA DEVI Family",
+      "primaryMobile": "9525968436",
+      "primaryAddress": "S/O SHYAMBIHARI  SINGH KAORA NAWADA BHOJPUR BIHAR",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "SUNITA DEVI",
+        "ARUN SINGH"
+      ],
+      "policyNumbers": [
+        "389416107",
+        "389416108"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 650000,
+      "totalPremium": 20386
+    },
+    {
+      "familyId": "FAM-0087",
+      "familyName": "MAYANK GIRI Family",
+      "primaryMobile": "9691181249",
+      "primaryAddress": "S/O NARAD 313 SHYAM NAGAR BARKHEDA PATHANI BHOPAL M.P",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "MAYANK GIRI",
+        "DEEPAK GIRI"
+      ],
+      "policyNumbers": [
+        "389416105",
+        "389416106"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 200000,
+      "totalPremium": 1250
+    },
+    {
+      "familyId": "FAM-0088",
+      "familyName": "RAJESH RAI Family",
+      "primaryMobile": "9425624308",
+      "primaryAddress": "S/O SHANKAR SINGH RAI LIG-2/147, HOUSING BOARD COLONY LAHARPUR BAGMUGALIYA EXT. BHOPAL",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "RAJESH RAI"
+      ],
+      "policyNumbers": [
+        "391512156",
+        "391512160"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 1295000,
+      "totalPremium": 982400
+    },
+    {
+      "familyId": "FAM-0089",
+      "familyName": "JAGRATI SINGH Family",
+      "primaryMobile": "7974631494",
+      "primaryAddress": "D/O MRITUNJAY SINGH H.NO-1 NAVEEN SWAMY VIVEKANANDA",
+      "relationType": "Individual Multiple Policies",
+      "members": [
+        "JAGRATI SINGH"
+      ],
+      "policyNumbers": [
+        "351220661",
+        "351221746"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 300000,
+      "totalPremium": 78663
+    },
+    {
+      "familyId": "FAM-0090",
+      "familyName": "ANSHIKA SINGH Family",
+      "primaryMobile": "7000337272",
+      "primaryAddress": "D/O MANORANJAN SINGH SR. MIG-334 KATARA HILLS BHOPAL MP",
+      "relationType": "Verified Family Unit (S/O, W/O, Co-resident)",
+      "members": [
+        "ANSHIKA SINGH",
+        "SHILPI KUMARI"
+      ],
+      "policyNumbers": [
+        "397150919",
+        "397150918"
+      ],
+      "totalPolicies": 2,
+      "totalSumAssured": 500000,
+      "totalPremium": 6948
+    }
+  ]
 }
