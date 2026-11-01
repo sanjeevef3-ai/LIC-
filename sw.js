@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lic-agent-offline-v14.0';
+const CACHE_NAME = 'lic-agent-offline-v15.0-1793528031';
 
 const ASSETS_TO_CACHE = [
   './',

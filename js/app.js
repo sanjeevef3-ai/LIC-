@@ -1,3 +1,19 @@
+// FORCE PURGE OBSOLETE 706 CACHE TO ENSURE 720 POLICIES EVERYWHERE
+(function() {
+  try {
+    if (typeof localStorage !== 'undefined') {
+      const stored = localStorage.getItem('LIC_APP_DATA');
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        if (!parsed.policies || parsed.policies.length < 720) {
+          console.warn("Purging obsolete cache (" + (parsed.policies ? parsed.policies.length : 0) + " policies) to upgrade to 720 policies.");
+          localStorage.removeItem('LIC_APP_DATA');
+        }
+      }
+    }
+  } catch (e) {}
+})();
+
 // Ensure fresh 706 dataset is forcefully loaded and obsolete client localStorage is cleared
 if (typeof localStorage !== 'undefined') {
   if (localStorage.getItem('LIC_APP_DATA_VERSION') !== '13.0') {
@@ -781,7 +797,7 @@ function hydrateDataFast() {
   let loaded = false;
 
   // Always load official EMBEDDED_LIC_DATA directly (706 policies) to ensure fresh data
-  if (typeof window !== 'undefined' && window.EMBEDDED_LIC_DATA && Array.isArray(window.EMBEDDED_LIC_DATA.policies) && window.EMBEDDED_LIC_DATA.policies.length >= 700) {
+  if (typeof window !== 'undefined' && window.EMBEDDED_LIC_DATA && Array.isArray(window.EMBEDDED_LIC_DATA.policies) && window.EMBEDDED_LIC_DATA.policies.length >= 720) {
     try {
       appData = JSON.parse(JSON.stringify(window.EMBEDDED_LIC_DATA));
       loaded = true;
@@ -797,7 +813,7 @@ function hydrateDataFast() {
       const local = (typeof localStorage !== 'undefined') ? localStorage.getItem('LIC_APP_DATA') : null;
       if (local) {
         const parsed = JSON.parse(local);
-        if (parsed && Array.isArray(parsed.policies) && parsed.policies.length >= 700) {
+        if (parsed && Array.isArray(parsed.policies) && parsed.policies.length >= 720) {
           appData = parsed;
           loaded = true;
         }
